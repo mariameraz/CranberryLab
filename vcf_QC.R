@@ -14,3 +14,6 @@ snps_num <- extract.gt(vcf,
            as.numeric = T,
            convertNA = T,
            return.alleles = F)
+
+
+gt_info %>% str_subset(., '/') %>% table
