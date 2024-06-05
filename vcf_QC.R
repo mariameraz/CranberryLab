@@ -23,7 +23,21 @@ na_info <- colSums(is.na(gt_info))
 summary(na_info)
 
 # Remove samples with more than 25% NAs
-# 25% threslhold: 
-round(nrow(gt_info) * 0.25)
+# 25% threshold: 
+thres <- round(nrow(gt_info) * 0.25)
 
-gt_info %>% str_subset(., '/') %>% table
+# Calculate number of NAs in each col
+
+na_counts <- na_info %>% as.data.frame() %>% `colnames<-`('perc')
+# Filter samples with high % (>75) of NAs
+snps_num_df <- snps_num[na_counts$perc <= thres,]
+
+dim(snps_num) - dim(snps_num_df)
+head(snps_num_df)
+
+# Remove invariable SNPs
+# Calculate the SD for each marker across all the samples
+nrow(snps_num_df)
+
+ds_snps <- apply(snps_num_df, 1, sd, na.rm = T)
+table(ds_snps == 0)
