@@ -1,0 +1,8 @@
+Quality Control - VCF data: 
+https://grunwaldlab.github.io/Population_Genetics_in_R/qc.html
+
+Worked Example: PCA on SNPs data from a vcf file Part 1 - Data Preparation:
+https://rpubs.com/madisondougherty/980777
+
+Principal Component Analyses (PCA)-based findings in population genetic studies are highly biased and must be reevaluated:
+https://www.nature.com/articles/s41598-022-14395-4
