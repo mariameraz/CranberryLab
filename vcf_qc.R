@@ -28,21 +28,30 @@ gt.data <- extract.gt(vcf,
 
 head(gt.data)
 
+# Create a backup, just in case..
+gt.data.backup <- gt.data
+
 # Rename the colnames of our dataset
 samples <- read.csv('samples.csv', header = T)
+samples[duplicated(samples$Unique.Client.Code),]
+
+# Delete duplicated sample (!!! before to do this, I double checked that it is trully the same sample)
+gt.data <- gt.data %>%
+                as.data.frame() %>%
+                select(-VAC_155005_P004_WB09)
+
+samples <- samples[-303,]
 
 # Extracting new col names
 new.colnames <- samples %>%
   filter(RAPiD.Genomics.Sample.Code %in% colnames(gt.data)) %>%
   pull(Unique.Client.Code)
 
-# Create a new vector for the new names
 rename.vector <- setNames(samples$Unique.Client.Code[samples$RAPiD.Genomics.Sample.Code %in% colnames(gt.data)],
                           samples$RAPiD.Genomics.Sample.Code[samples$RAPiD.Genomics.Sample.Code %in% colnames(gt.data)])
 
-# Rename all the columns of the gt.data matrix 
 gt.data.rename <- gt.data %>%
-                    as.data.frame() %>% # Data needs to be converted first to df 
+                    as.data.frame() %>%
                     rename_with(~ rename.vector[.x], .cols = colnames(gt.data))
 
 head(gt.data.rename)
@@ -52,3 +61,10 @@ na.data <- is.na(gt.data) %>%
   colSums() %>%
   as.data.frame() %>% 
   dplyr::rename(na_value = '.')
+
+
+
+ggplot(na.data, aes(x = na_value)) +
+  geom_boxplot()
+
+
