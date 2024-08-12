@@ -1,4 +1,5 @@
 ### Examining stats in the VCF
+# Tutorial: https://speciationgenomics.github.io/filtering_vcfs/
 
 # Load libraries
 library(tidyverse)
