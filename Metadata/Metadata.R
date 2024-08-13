@@ -14,7 +14,7 @@ data <- data[grep('P00[1-5]', data$`RAPiD Genomics Sample Code`),]
 data <- data[c(3,4)]
 write.csv(data, 'samples.csv')
 
-## Filter samples by population
+## Filter samples by population ------------------------------------------------------------------------------------------------------
 
 library(tidyverse)
 
