@@ -1,0 +1,6 @@
+Stats after filtering my VCF:
+MAF= 0.05
+MISS=0.1
+QUAL=30
+MIN_DEPTH=15
+MAX_DEPTH=160
