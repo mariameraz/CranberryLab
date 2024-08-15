@@ -65,7 +65,7 @@ na.data <- is.na(gt.data) %>%
 
 summary(na.data)
 # Create a new column with the % of NAs to facilitate the visualization
-na.data <- na.data %>% mutate(perc_na = round((na_value/280603)*100, digits = 1))
+na.data <- na.data %>% mutate(perc_na = round((na_value/nrow(gt.data)*100, digits = 1))
 
 # Create a boxplot to observe the distribution of the NA data
 ggplot(na.data, aes(x = na_value)) +
