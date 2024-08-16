@@ -1,0 +1,38 @@
+PLINK v2.00a5.12 32-bit (25 Jun 2024)
+Options in effect:
+  --allow-extra-chr
+  --double-id
+  --extract dp.prune.in
+  --make-bed
+  --out dp
+  --pca
+  --set-missing-var-ids @:#
+  --vcf /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/DP_VCF_stats/FILTERED_MAF/DP_filtered_biallelic.vcf.gz
+
+Hostname: zalapa-iMac
+Working directory: /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/DP_VCF_stats/FILTERED_MAF
+Start time: Fri Aug 16 15:36:20 2024
+
+Random number seed: 1723840580
+19970 MiB RAM detected, ~16705 available; reserving 2047 MiB for main
+workspace.
+Using up to 4 compute threads.
+--vcf: 27656 variants scanned.
+--vcf: dp-temporary.pgen + dp-temporary.pvar.zst + dp-temporary.psam written.
+242 samples (0 females, 0 males, 242 ambiguous; 242 founders) loaded from
+dp-temporary.psam.
+27656 variants loaded from dp-temporary.pvar.zst.
+Note: No phenotype data present.
+--extract: 3285 variants remaining.
+Calculating allele frequencies... done.
+3285 variants remaining after main filters.
+Constructing GRM: done.
+Correcting for missingness... done.
+Extracting eigenvalues and eigenvectors... done.
+--pca: Eigenvectors written to dp.eigenvec , and eigenvalues written to
+dp.eigenval .
+Writing dp.fam ... done.
+Writing dp.bim ... done.
+Writing dp.bed ... done.
+
+End time: Fri Aug 16 15:36:22 2024

@@ -3,9 +3,17 @@ VCFtools - 0.1.16
 (C) Adam Auton and Anthony Marcketta 2009
 
 Parameters as interpreted:
-	--gzvcf /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/DP_VCF_stats/FILTERED_MAF/DP_filtered_V2.vcf.gz
-	--het
-	--out /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/DP_VCF_stats/FILTERED_MAF/DP_vcf
+	--gzvcf /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/DP.vcf.gz
+	--maf 0.05
+	--maxDP 160
+	--max-meanDP 160
+	--minDP 15
+	--min-meanDP 15
+	--minQ 30
+	--max-missing 0.9
+	--recode
+	--remove-indels
+	--stdout
 
 Using zlib version: 1.2.11
 Warning: Expected at least 2 parts in INFO entry: ID=AF,Number=A,Type=Float,Description="Estimated allele frequency in the range (0,1]">
@@ -27,8 +35,7 @@ Warning: Expected at least 2 parts in INFO entry: ID=TYPE,Number=A,Type=String,D
 Warning: Expected at least 2 parts in INFO entry: ID=CIGAR,Number=A,Type=String,Description="The extended CIGAR representation of each alternate allele, with the exception that '=' is replaced by 'M' to ease VCF parsing.  Note that INDEL alleles do not have the first matched base (which is provided by default, per the spec) referred to by the CIGAR.">
 Warning: Expected at least 2 parts in FORMAT entry: ID=GQ,Number=1,Type=Float,Description="Genotype Quality, the Phred-scaled marginal (or unconditional) probability of the called genotype">
 Warning: Expected at least 2 parts in FORMAT entry: ID=GL,Number=G,Type=Float,Description="Genotype Likelihood, log10-scaled likelihoods of the data given the called genotype for each possible genotype generated from the reference and alternate alleles given the sample ploidy">
-After filtering, kept 242 out of 242 Individuals
-Outputting Individual Heterozygosity
-	Individual Heterozygosity: Only using biallelic SNPs.
-After filtering, kept 27745 out of a possible 27745 Sites
-Run Time = 1.00 seconds
+After filtering, kept 249 out of 249 Individuals
+Outputting VCF file...
+After filtering, kept 20752 out of a possible 280603 Sites
+Run Time = 44.00 seconds

@@ -1,0 +1,20 @@
+
+@----------------------------------------------------------@
+|        PLINK!       |     v1.07      |   10/Aug/2009     |
+|----------------------------------------------------------|
+|  (C) 2009 Shaun Purcell, GNU General Public License, v2  |
+|----------------------------------------------------------|
+|  For documentation, citation & bug-report instructions:  |
+|        http://pngu.mgh.harvard.edu/purcell/plink/        |
+@----------------------------------------------------------@
+
+Web-based version check ( --noweb to skip )
+Recent cached web-check found...Problem connecting to web
+
+Writing this text to log file [ DP_filtered.log ]
+Analysis started: Thu Aug 15 19:31:59 2024
+
+** Unused command line option: --vcf 
+** Unused command line option: DP_filtered_V2.vcf.gz 
+
+ERROR: Problem parsing the command line arguments.
