@@ -1,0 +1,14 @@
+PLINK v2.00a5.12 32-bit (25 Jun 2024)
+Options in effect:
+  --distance square 1-ibs
+  --out distance_matrix
+  --vcf /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/DP_VCF_stats/FILTERED_MAF/DP_filtered_biallelic.vcf.gz
+
+Hostname: zalapa-iMac
+Working directory: /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/Phylogeny
+Start time: Sat Aug 17 20:27:47 2024
+
+Error: Unrecognized flag ('--distance').
+For more info, try "plink2 --help <flag name>" or "plink2 --help | more".
+
+End time: Sat Aug 17 20:27:47 2024

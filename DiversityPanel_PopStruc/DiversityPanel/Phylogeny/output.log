@@ -1,0 +1,25 @@
+PLINK v2.00a5.12 32-bit (25 Jun 2024)
+Options in effect:
+  --export ped
+  --out output
+  --vcf /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/DP_VCF_stats/FILTERED_MAF/DP_filtered_biallelic.vcf.gz
+
+Hostname: zalapa-iMac
+Working directory: /home/zalapa/Documents/CranLab/DiversityPanel_PopStruc/DiversityPanel/Phylogeny
+Start time: Sat Aug 17 20:27:04 2024
+
+Random number seed: 1723944424
+19979 MiB RAM detected, ~16205 available; reserving 2047 MiB for main
+workspace.
+Using up to 4 compute threads.
+--vcf: 27656 variants scanned.
+--vcf: output-temporary.pgen + output-temporary.pvar.zst +
+output-temporary.psam written.
+242 samples (0 females, 0 males, 242 ambiguous; 242 founders) loaded from
+output-temporary.psam.
+27656 variants loaded from output-temporary.pvar.zst.
+Note: No phenotype data present.
+Writing output.map ... done.
+--export ped: output.ped written.
+
+End time: Sat Aug 17 20:27:06 2024
