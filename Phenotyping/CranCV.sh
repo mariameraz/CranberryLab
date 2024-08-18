@@ -24,7 +24,7 @@ INPUT=/home/torresmeraz/Tomomi_test/Images
 ANN=/home/torresmeraz/Tomomi_test/Images/Annotated
 OUT=/home/torresmeraz/Tomomi_test/Images.csv
 
-# Run the analysis
+# Run the analysis with blue background
 
 python3 $CRAN -i $INPUT -o $OUT --cv2 -s 2 --norows --correct -a $ANN 
 
