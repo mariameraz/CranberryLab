@@ -1,8 +1,8 @@
 # Create a new environment
-conda create --name mamba_env_bicran.yml
+conda create --name conda_env_crancnn.yml
 
 # Activate environment
-conda activate mamba_env_bicran.yml
+conda activate conda_env_crancnn.yml
 
 # Install packages
 conda install plantcv
@@ -13,10 +13,10 @@ pip install ultralytics
 pip install segment-anything
 
 # Activate environment
-conda activate yml_files/mamba_env_bicran.yml
+conda activate yml_files/conda_env_crancnn.yml
 
 # Update environment
-mamba env update --file mamba_env_bicran.yml
+mamba env update --file conda_env_crancnn.yml
 
 # Define variables
 CRAN=/home/torresmeraz/crancv-main/CranExternalV1.py
