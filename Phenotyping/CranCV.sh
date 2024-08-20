@@ -12,12 +12,6 @@ python3 -m pip install torch
 pip install ultralytics
 pip install segment-anything
 
-# Activate environment
-conda activate yml_files/conda_env_crancnn.yml
-
-# Update environment
-mamba env update --file conda_env_crancnn.yml
-
 # Define variables
 CRAN=/home/torresmeraz/crancv-main/CranExternalV1.py
 INPUT=/home/torresmeraz/Tomomi_test/Images
@@ -33,3 +27,7 @@ python3 $CRAN -i $INPUT -o $OUT --cv2 -s 2 --norows --correct -a $ANN
 # --norows, not sorted berries
 # --correct, correct image colors
 # -a, save annotated photos
+
+
+# Deactivate environment
+conda deactivate yml_files/conda_env_crancnn.yml
