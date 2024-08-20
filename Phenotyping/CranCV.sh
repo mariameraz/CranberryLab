@@ -11,16 +11,18 @@ conda install tqdm
 python3 -m pip install torch
 pip install ultralytics
 pip install segment-anything
+pip install --upgrade opencv-python opencv-contrib-python
+pip install pyarrow
 
 # Define variables
-CRAN=/home/torresmeraz/crancv-main/CranExternalV1.py
-INPUT=/home/torresmeraz/Tomomi_test/Images
-ANN=/home/torresmeraz/Tomomi_test/Images/Annotated
-OUT=/home/torresmeraz/Tomomi_test/Images.csv
+CRAN=/home/zalapa/Documents/crancv-main_Aug-20-2024/crancv-main/CranExternalV1.py
+INPUT=/home/zalapa/Documents/CranLab/DiversityPanel/Phenotyping/Harvest1_2023/Images
+ANN=/home/zalapa/Documents/CranLab/DiversityPanel/Phenotyping/Harvest1_2023/Images/Annotated
+OUT=/home/zalapa/Documents/CranLab/DiversityPanel/Phenotyping/Harvest1_2023/Images.csv
 
 # Run the analysis with blue background
 
-python3 $CRAN -i $INPUT -o $OUT --cv2 -s 2 --norows --correct -a $ANN 
+python3 $CRAN -i $INPUT -o $OUT --cv2 -s 2 --norows --correct -a $ANN -n 10
 
 # --cv2, use cv2 segmentation 
 # -s 2, diameter of the dots in cm
