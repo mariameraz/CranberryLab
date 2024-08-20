@@ -13,6 +13,7 @@ pip install ultralytics
 pip install segment-anything
 pip install --upgrade opencv-python opencv-contrib-python
 pip install pyarrow
+pip install ColorCorrectionML
 
 # Define variables
 CRAN=/home/zalapa/Documents/crancv-main_Aug-20-2024/crancv-main/CranExternalV1.py
