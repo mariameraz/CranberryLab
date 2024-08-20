@@ -248,7 +248,7 @@ class SingleCranImage():
         thr_black = remove_small_objects(thr_black.astype(bool), min_area_px).astype(np.uint8) * 255
         marker_contours, hierarchy = cv2.findContours(thr_black, 0, 2)
         marker_contours = [x for x in marker_contours if roundness_contour(x) > 0.95]
-        if len(marker_contours == 0):
+        if len(marker_contours) == 0:
             self.marker_size_px = np.nan
             self.no_markers = True
         else:
@@ -292,7 +292,7 @@ class SingleCranImage():
             berry_contours = [x for x in berry_contours if cv2.contourArea(x) < 50000 or roundness_contour(x) < 0.93]
         # downstream metrics and useful objects
         self.berry_contours = berry_contours
-        if len(berry_contours == 0):
+        if len(berry_contours) == 0:
             # TODO - possible - throw warning if no berries found
             self.no_berries = True
         self.berry_moments = [cv2.moments(x) for x in berry_contours]
