@@ -156,7 +156,6 @@ def oriented_bounding_box(cnt):
         print(f"Error en oriented_bounding_box: {e}")
         return None
 
-
 def rotate_contour(cnt):
     # from a cv2-generated contour, rotate it to be oriented vertically (long axis pointed up and down)
     # note: produces a rotated MASK, not a contour
@@ -265,25 +264,35 @@ class SingleCranImage():
         self.lab = cv2.cvtColor(self.img, cv2.COLOR_BGR2LAB)
         self.hsv = cv2.cvtColor(self.img, cv2.COLOR_BGR2HSV)
 
-    def find_size_markers(self, min_area_px = 10000):
-        # size marker detection for non-CNN method, assuming one or more black circles of uniform diameter
-        # 10k pixel cutoff size is static - adjust as needed
-        _,thr_black = cv2.threshold(self.hsv[:,:,2], 70, 255, cv2.THRESH_BINARY_INV)
-        thr_black = remove_small_objects(thr_black.astype(bool), min_area_px).astype(np.uint8) * 255
-        marker_contours, hierarchy = cv2.findContours(thr_black, 0, 2)
-        marker_contours = [x for x in marker_contours if roundness_contour(x) > 0.95]
-        if len(marker_contours) == 0:
+    def find_size_markers(self, min_area_px=10000):
+        try:
+            # Detección de marcadores de tamaño para el método no CNN, asumiendo uno o más círculos negros de diámetro uniforme
+            _, thr_black = cv2.threshold(self.hsv[:, :, 2], 70, 255, cv2.THRESH_BINARY_INV)
+            thr_black = remove_small_objects(thr_black.astype(bool), min_area_px).astype(np.uint8) * 255
+            marker_contours, hierarchy = cv2.findContours(thr_black, 0, 2)
+            marker_contours = [x for x in marker_contours if roundness_contour(x) > 0.95]
+
+            if len(marker_contours) == 0:
+                self.marker_size_px = np.nan
+                self.no_markers = True
+                self.marker_contours = []
+            else:
+                marker_sizes = [np.mean(cv2.boundingRect(x)[2:4]) for x in marker_contours]
+                self.marker_size_px = np.mean(marker_sizes)
+
+                # Los marcadores de tamaño deben estar dentro del 1-2% entre sí, marcar si >5%
+                if any(abs((marker_sizes - self.marker_size_px) / self.marker_size_px) > 0.05):
+                    print(f'Issue in image {self.filename}: Size markers with >5 percent deviation from mean marker size. Check size markers on this image')
+
+                # Guardar los contornos de los marcadores
+                self.marker_contours = marker_contours
+
+        except Exception as e:
+            # Imprimir mensaje de error y continuar con la siguiente imagen
+            print(f"Error en la detección de marcadores de tamaño en imagen '{self.filename}': {e}")
             self.marker_size_px = np.nan
-            self.no_markers = True
-        else:
-            marker_sizes = [np.mean(cv2.boundingRect(x)[2:4]) for x in marker_contours]
-            self.marker_size_px = np.mean(marker_sizes)
-        self.marker_contours = marker_contours
-        # size markers should be within 1-2% of each other usually, flag if >5%
-        if any(abs((marker_sizes - self.marker_size_px)/self.marker_size_px) > 0.05):
-            print('Issue in image %s' % self.filename)
-            print('Size markers with >5 percent deviation from mean marker size. Check size markers on this image')
-        
+            self.marker_contours = []
+
     def find_berries(self, whitebg = False):
         if not whitebg:
             # with blue background, easier to read if we select the background, then invert
@@ -358,25 +367,42 @@ class SingleCranImage():
                 print('Size markers with >5 percent deviation from mean marker size. Check size markers on this image')
 
     def measure_berries(self):
-        # defining columns one at a time like this is a bit clunky
-        # but it's legible and explicit, which is useful
-        berry_df = pd.DataFrame()
-        berry_df['berry'] = [x+1 for x in list(range(len(self.berry_contours)))]
-        berry_df['length_px'] = [obb[1][1] for obb in self.obb_list]
-        berry_df['width_px'] = [obb[1][0] for obb in self.obb_list]
-        berry_df['length_vs_width'] = berry_df['length_px']/berry_df['width_px']
-        berry_df['area_px2'] = [int(cv2.contourArea(cnt)) for cnt in self.berry_contours]
-        berry_df['perimeter_px'] = [int(cv2.arcLength(cnt, True)) for cnt in self.berry_contours]
-        berry_df['solidity'] = [cv2.contourArea(cnt)/cv2.contourArea(cv2.convexHull(cnt)) for cnt in self.berry_contours]
-        berry_df['roundness'] = [roundness_contour(cnt) for cnt in self.berry_contours]
-        berry_df['est_volume_px3'] = [int(est_rotated_volume(rot)) for rot in self.rotated_masks]
-        berry_df['est_surfarea_px2'] = [int(est_rotated_surfarea(rot)) for rot in self.rotated_masks]
-        berry_df['center_px_x'] = [int(obb[0][0]) for obb in self.obb_list]
-        berry_df['center_px_y'] = [int(obb[0][1]) for obb in self.obb_list]
-        # insert file/path last so single value nicely scales up to n rows
-        berry_df.insert(0, 'filename', self.filename)
-        berry_df.insert(0, 'dir', self.dir)
-        self.berry_df = berry_df
+        try:
+            if self.obb_list is None:
+                raise ValueError("self.obb_list es None")
+            
+            # Crear DataFrame vacío
+            berry_df = pd.DataFrame()
+            berry_df['berry'] = [x + 1 for x in range(len(self.berry_contours))]
+
+            # Intentar calcular las métricas para bayas
+            try:
+                berry_df['length_px'] = [obb[1][1] for obb in self.obb_list]
+                berry_df['width_px'] = [obb[1][0] for obb in self.obb_list]
+                berry_df['length_vs_width'] = berry_df['length_px'] / berry_df['width_px']
+                berry_df['area_px2'] = [int(cv2.contourArea(cnt)) for cnt in self.berry_contours]
+                berry_df['perimeter_px'] = [int(cv2.arcLength(cnt, True)) for cnt in self.berry_contours]
+                berry_df['solidity'] = [cv2.contourArea(cnt) / cv2.contourArea(cv2.convexHull(cnt)) for cnt in self.berry_contours]
+                berry_df['roundness'] = [roundness_contour(cnt) for cnt in self.berry_contours]
+                berry_df['est_volume_px3'] = [int(est_rotated_volume(rot)) for rot in self.rotated_masks] if self.rotated_masks else []
+                berry_df['est_surfarea_px2'] = [int(est_rotated_surfarea(rot)) for rot in self.rotated_masks] if self.rotated_masks else []
+                berry_df['center_px_x'] = [int(obb[0][0]) for obb in self.obb_list]
+                berry_df['center_px_y'] = [int(obb[0][1]) for obb in self.obb_list]
+            except (IndexError, TypeError) as e:
+                # Imprimir mensaje de error y salir de la función sin asignar berry_df
+                print(f"Error al procesar obb_list en imagen '{self.filename}': {e}")
+                return  # Salta a la siguiente imagen
+            
+            # Insertar archivo/ruta al principio para que un solo valor se adapte a n filas
+            berry_df.insert(0, 'filename', self.filename)
+            berry_df.insert(0, 'dir', self.dir)
+            self.berry_df = berry_df
+
+        except Exception as e:
+            # Imprimir mensaje de error general y salir de la función sin asignar berry_df
+            print(f"Error al medir bayas en imagen '{self.filename}': {e}")
+            self.berry_df = pd.DataFrame()
+            return  # Salta a la siguiente imagen
 
     def sort_berries(self):
         # sort berries (and output df) into rows and columns via k means clustering
