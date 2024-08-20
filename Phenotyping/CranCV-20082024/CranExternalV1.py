@@ -371,6 +371,7 @@ class SingleCranImage():
         self.berry_df['berry'] = list(range(1, self.berry_df.shape[0]+1))
 
     def measure_color(self):
+        print(f"Processing image: {self.filename}")
         # separate/calculate color channels
         black = np.zeros_like(self.gray)
         lab = self.lab.astype(np.int32)
