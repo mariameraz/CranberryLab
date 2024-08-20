@@ -108,30 +108,54 @@ def k_means_unknown_k(X, min_k=2, max_k=10):
     return best_model
 
 def oriented_bounding_box(cnt):
-    # from a cv2-generated contour, rotate and create an oriented bounding box in same format as tuple created by cv2.minAreaRect()
-    # could expedite by integrating rotate_contour() below, but nice that this is standalone
-    (center_x,center_y),(MA,ma),angle = cv2.fitEllipse(cnt)
-    xmin = np.min(cnt[:,:,0])
-    ymin = np.min(cnt[:,:,1])
-    w = np.max(cnt[:,:,0]) - xmin
-    h = np.max(cnt[:,:,1]) - ymin
-    # make a canvas large enough to fit any arbitrary contour/rotated contour, redraw the contour on it, then rotate
-    # draw it such that the center of the ellipse-of-best-fit is exactly at the midpoint
-    drawn_cnt = np.zeros((h+w,h+w), dtype = np.uint8)
-    cv2.drawContours(drawn_cnt, [cnt - [int(center_x),int(center_y)] + [int((w+h)/2),int((h+w)/2)]], 0, 255, cv2.FILLED)
-    rot_matrix = cv2.getRotationMatrix2D(((h+w)/2, (h+w)/2), angle, 1)
-    rotated = cv2.warpAffine(drawn_cnt, rot_matrix, (h+w,h+w))
-    # redraw contours in order to find oriented bounding box (OBB)
-    cnt_rotated, hierarchy = cv2.findContours(rotated, 0, 2)
-    obb_x,obb_y,obb_w,obb_h = cv2.boundingRect(cnt_rotated[0])
-    # offset vector between oriented rectangle center and ellipse center
-    # tends to be small, but makes the annotations cleaner
-    center_offset = np.array((obb_x + (obb_w/2) - (w+h)/2, obb_y + (obb_h/2) - (w+h)/2))
-    center_offset = np.matmul(center_offset, cv2.getRotationMatrix2D((0,0), angle, 1)[:,0:2])
-    rect_center_x = center_x + center_offset[0]
-    rect_center_y = center_y + center_offset[1]
-    obb = ((rect_center_x, rect_center_y), (obb_w, obb_h), angle)
-    return obb
+    try:
+        # Verifica si el contorno es válido
+        if cnt is None or len(cnt) == 0:
+            raise ValueError("El contorno proporcionado está vacío o es inválido.")
+
+        # Calcular el ajuste elíptico
+        (center_x, center_y), (MA, ma), angle = cv2.fitEllipse(cnt)
+        xmin = np.min(cnt[:,:,0])
+        ymin = np.min(cnt[:,:,1])
+        w = np.max(cnt[:,:,0]) - xmin
+        h = np.max(cnt[:,:,1]) - ymin
+
+        # Crear un lienzo para el contorno rotado
+        canvas_size = h + w
+        drawn_cnt = np.zeros((canvas_size, canvas_size), dtype=np.uint8)
+        cnt_shifted = cnt - [int(center_x), int(center_y)] + [int((w + h) / 2), int((h + w) / 2)]
+        cv2.drawContours(drawn_cnt, [cnt_shifted], 0, 255, cv2.FILLED)
+
+        # Crear una matriz de rotación y aplicar la rotación
+        rot_matrix = cv2.getRotationMatrix2D(((canvas_size) / 2, (canvas_size) / 2), angle, 1)
+        rotated = cv2.warpAffine(drawn_cnt, rot_matrix, (canvas_size, canvas_size))
+
+        # Encontrar contornos en la imagen rotada
+        cnt_rotated, _ = cv2.findContours(rotated, 0, 2)
+
+        if len(cnt_rotated) == 0:
+            raise ValueError("No se encontraron contornos en la imagen rotada.")
+
+        # Obtener el rectángulo delimitador orientado
+        obb_x, obb_y, obb_w, obb_h = cv2.boundingRect(cnt_rotated[0])
+
+        # Calcular el desplazamiento del centro
+        center_offset = np.array((obb_x + (obb_w / 2) - (canvas_size / 2),
+                                  obb_y + (obb_h / 2) - (canvas_size / 2)))
+        rot_matrix = cv2.getRotationMatrix2D((0, 0), angle, 1)[:, 0:2]
+        center_offset = np.matmul(center_offset, rot_matrix)
+        
+        rect_center_x = center_x + center_offset[0]
+        rect_center_y = center_y + center_offset[1]
+
+        # Crear el bounding box orientado
+        obb = ((rect_center_x, rect_center_y), (obb_w, obb_h), angle)
+        return obb
+
+    except Exception as e:
+        print(f"Error en oriented_bounding_box: {e}")
+        return None
+
 
 def rotate_contour(cnt):
     # from a cv2-generated contour, rotate it to be oriented vertically (long axis pointed up and down)
