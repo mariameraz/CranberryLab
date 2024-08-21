@@ -21,8 +21,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Procesa y corrige el color de las imágenes en un directorio.")
 
     # Argumentos para el directorio de entrada y salida
-    parser.add_argument('-i', type=str, help="Directorio de entrada que contiene las imágenes.")
-    parser.add_argument('-o', type=str, help="Directorio de salida donde se guardarán las imágenes corregidas.")
+    parser.add_argument('input_directory', type=str, help="Directorio de entrada que contiene las imágenes.")
+    parser.add_argument('output_directory', type=str, help="Directorio de salida donde se guardarán las imágenes corregidas.")
 
     # Parsear los argumentos
     args = parser.parse_args()
