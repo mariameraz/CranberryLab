@@ -3,6 +3,27 @@ import os
 import argparse
 from ColorCorrectionML import ColorCorrectionML
 
+# Función para procesar y corregir una imagen
+def process_image(image_path, output_dir):
+    # Cargar la imagen
+    img = cv2.imread(image_path)
+
+    # Crear una instancia de la clase ColorCorrectionML
+    color_correction = ColorCorrectionML(img)
+
+    # Calcular la corrección de color
+    color_correction.compute_correction()
+
+    # Obtener la imagen corregida
+    img_corrected = color_correction.correct_img(img)
+
+    # Obtener el nombre del archivo de la imagen sin el path
+    filename = os.path.basename(image_path)
+
+    # Guardar la imagen corregida
+    output_path = os.path.join(output_dir, f'corrected_{filename}')
+    cv2.imwrite(output_path, img_corrected)
+
 def process_images_in_directory(input_dir, output_dir):
     # Crear el directorio de salida si no existe
     os.makedirs(output_dir, exist_ok=True)
