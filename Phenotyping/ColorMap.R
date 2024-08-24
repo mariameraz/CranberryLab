@@ -5,9 +5,10 @@ library(reshape2)
 library(pheatmap)
 library(colorspace)
 library(viridis)
-# Load data
-data <- read.csv('~/Documents/CranLab/Phenotyping/DPH1_2023/DPH1_2023.csv', header = T)
+library(ggbiplot)
+library(ggrepel)
 
+### COLOR
 data$color_L_median <- (data$color_L_median*100)/255
 summary(data$color_L_median)
 
@@ -21,8 +22,8 @@ data$color_B_normalized <- data$color_B_median / 255
 
 # Crear el gráfico de puntos
 ggplot(data, aes(x = color_R_normalized, 
-                     y = color_G_normalized, 
-                     color = rgb(color_R_normalized, color_G_normalized, color_B_normalized))) +
+                 y = color_G_normalized, 
+                 color = rgb(color_R_normalized, color_G_normalized, color_B_normalized))) +
   geom_point(size = 3) +
   scale_color_identity() +
   theme_minimal() +
@@ -46,9 +47,9 @@ ggplot(data, aes(x = color_R_normalized, y = color_G_normalized, color = rgb(col
   geom_point(size = 3) +
   scale_color_identity() +
   theme_minimal() +
-  labs(title = "Diversidad de Tonalidades en Frutos de Cranberry",
-       x = "R Normalizado",
-       y = "G Normalizado") +
+  labs(title = "Color diversity in Cranberry fruits",
+       x = "R channel",
+       y = "G channel") +
   theme_minimal()
 
 # Aplicar la conversión a cada fila
@@ -62,11 +63,12 @@ colnames(srgb) <- c('R','G','B')
 ggplot(srgb, aes(x = R, y = G, color = rgb(R, G, B))) +
   geom_point(size = 3) +
   scale_color_identity() +
-  theme_minimal() +
-  labs(title = "Diversidad de Tonalidades en Frutos de Cranberry",
-       x = "R Normalizado",
-       y = "G Normalizado") +
-  theme_minimal()
+  theme_classic() +
+  labs(title = "Color diversity in Cranberry fruits",
+       x = "R channel",
+       y = "G channel") +
+  theme(text = element_text(size = 25))
+
 
 ### Correlation Matrix
 df <- data %>% select(-dir, -berry) %>%
@@ -120,23 +122,26 @@ ggheatmap <- ggplot(melted_cormat, aes(Var2, Var1, fill = value))+
   
   theme_minimal()+ # minimal theme
   theme(axis.text.x = element_text(angle = 45, vjust = 1, 
-                                   size = 12, hjust = 1))+
-  scale_fill_viridis_c(option = "D", direction = -1, name = "Pearson\nCorrelation") +
+                                   size = 25, hjust = 1),
+        axis.text.y = element_text(size = 25))+
+  scale_fill_viridis_c(option = "C", direction = -1, name = "Pearson\nCorrelation") +
   coord_fixed() + 
   geom_text(aes(Var2, Var1, label = round(value, 2), 
                 color = ifelse(value > 0.4, "white", "black")), 
-            size = 4) +
+            size = 6) +
   scale_color_manual(values = c("black", "white")) + # Define the color scale
   theme(
     axis.title.x = element_blank(),
     axis.title.y = element_blank(),
-    #panel.grid.major = element_blank(),
+    panel.grid.major = element_blank(),
     panel.border = element_blank(),
     panel.background = element_blank(),
     axis.ticks = element_blank(),
     legend.justification = c(1, 0),
     legend.position = c(0.6, 0.7),
-    legend.direction = "horizontal") +
+    legend.direction = "horizontal",
+    legend.title = element_text(size = 18),
+    legend.text = element_text(size = 14)) +
   guides(fill = guide_colorbar(barwidth = 7, barheight = 1,
                                title.position = "top", title.hjust = 0.5),
          color = "none") # Hide color legend for text colors
