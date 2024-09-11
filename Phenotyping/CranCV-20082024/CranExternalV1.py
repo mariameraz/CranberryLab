@@ -427,6 +427,7 @@ class SingleCranImage():
         L,a,b = np.split(lab, 3, axis=2)
         a -= 128
         b -= 128
+        L = (L / 255.0) * 100.0
         B,G,R = np.split(self.img, 3, axis=2)
         # from contours, create a list of indices of pixels within the contour bounds (after eroding 10px)
         # eroding 10-px border of each berry mask reduces noise from slivers of background, reflection, etc
