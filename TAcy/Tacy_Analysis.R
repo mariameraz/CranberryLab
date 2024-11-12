@@ -1,14 +1,29 @@
-# Load libraries:
+# Load libraries
 library(tidyverse)
 
-# Set working directory:
-setwd('~/Documents/CranLab/TAcy/')
+# Set working directoty
+setwd('~/Documents/GitHub/CranberryLab/TAcy/')
 
-# Load data:
-data <- read.csv('extracted_data.csv', header = T,fill = T)
-data <- na.omit(data)
-data <- data %>% filter(Person != 'Ree', Harvest == 1)
+# Read data 
+data <- read.csv('tacy_data.csv', header = T)
 
-# Load tacy_conc function to calculate the concentration of anthocyanins
+# Filtering data
+data <-  data %>% 
+  dplyr::filter( !(Person == 'Ree') & # 
+                   nm_520 > 0 & 
+                   nm_700 > 0)
+
+# Do we have duplicated data?
+duplicated_samples <- data %>% 
+  summarise(n = n(), .by = c(pH, Rep, Sample_code)) %>% 
+  filter(n > 1)
+
+# Remove duplicated samples
+data <- data[!(data$Sample_code %in% duplicated_samples$Sample_code),]
+
+
+# Load Tacy concentration function
 source('tacy_conc.R')
-tacy_conc(data = data) %>% View()
+
+# Calculate tacy concentration
+conc_data <- tacy_conc(data)
