@@ -3,7 +3,7 @@ tacy_conc <- function(data){
   data %>% 
     mutate(Diff = as.numeric(nm_520) - as.numeric(nm_700)) %>%
     dplyr::select(pH, Rep, Sample_code, Diff) %>% 
-    group_by(Sample_code, Rep) %>%
+    group_by(Sample_code, Rep, Harvest) %>%
     pivot_wider(names_from = pH, 
                 values_from = Diff, 
                 names_prefix = "pH_") %>% 
