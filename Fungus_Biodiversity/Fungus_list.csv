@@ -1,16 +1,28 @@
-Genus,Specie,Group,Details
-Hyaloscypha,hepaticicola,Confirmed ErMF,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
-Oidiodendron,maius,Confirmed ErMF,"Ascomycota (Rice & Currah, 2005; Vohnik 2020)"
-Leohumicola,spp.,Confirmed ErMF,"Ascomycota; Interaction with Rhododendron, Grunewaldt-Stocker et al. 2013"
-Serendipita,sp. JPK-132 (OP863025),Confirmed ErMF,Basidiomycota
-Kurtia,argillacea species complex,Confirmed ErMF,"Basidiomycota (syn. Hyphodontia argillaceum, Hyphoderma argillaceum)"
-Cairneyella,variabilis,Confirmed ErMF,Ascomycota
-Gamarada,debralockiae,Confirmed ErMF,Ascomycota
-Hyaloscypha,gryndleri,Probable ErMF,Probable ErMF
-Hyaloscypha,variabilis,Probable ErMF,Probable ErMF + endophyte
-Hyaloscypha,bicolor,Possible ErMF,EcMF + Possible ErMF + Endophyte (syn. Meliniomyces bicolor)
-Hyaloscypha,finlandica,Possible ErMF,EcMF + Possible ErMF + Endophyte (syn. Cadophora finlandica)
-Serendipita,spp.,Possible ErMF,https://link.springer.com/article/10.1007/s00572-016-0717-0#Sec16
-Lachnum,pygmaeum,Possible ErMF,https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.920338/full
-Hyaloscypha,melinii,Standing unclear,(endophyte?); Vohnik ICOM12 presentation 2024
-Hyaloscypha,gabretae,Standing unclear,(endophyte?); Vohnik ICOM12 presentation 2024
+Fungus,Genus,Species,ERMF_Group,Details
+Hyaloscypha,Hyaloscypha,hepaticicola,Confirmed,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
+Hyaloscypha,Pezicula,ericae,Confirmed,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
+Hyaloscypha,Hymenoscyphus,ericae,Confirmed,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
+Hyaloscypha,Scytalidium,ericae,Confirmed,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
+Hyaloscypha,Rhyzoscyphus,ericae,Confirmed,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
+Hyaloscypha,Pezoloma,ericae,Confirmed,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
+Hyaloscypha,Melinomyces,spp.,Confirmed,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
+Hyaloscypha,Pezizella,ericae,Confirmed,"Ascomycota; Confirmed ErMF + symbiont of bryophytes; Syn. Pezicula ericae, Hymenoscyphus ericae, Scytalidium ericae, Rhyzoscyphus ericae, Pezoloma ericae, Melinomyces spp., Pezizella ericae"
+Oidiodendron,Oidiodendron,maius,Confirmed,"Ascomycota (Rice & Currah, 2005; Vohnik 2020)"
+Oidiodendron,Oidiodendron,citrinum,Confirmed,"Ascomycota (Rice & Currah, 2005; Vohnik 2020)"
+Leohumicola,Leohumicola,spp.,Confirmed,"Ascomycota; Interaction with Rhododendron, Grunewaldt-Stocker et al. 2013"
+Serendipita,Serendipita,sp. JPK-132 (OP863025),Confirmed,Basidiomycota
+Kurtia,Kurtia,argillacea species complex,Confirmed,"Basidiomycota (syn. Hyphodontia argillaceum, Hyphoderma argillaceum)"
+Kurtia,Hyphodontia,argillaceum,Confirmed,"Basidiomycota (syn. Hyphodontia argillaceum, Hyphoderma argillaceum)"
+Kurtia,Hyphoderma,argillaceum,Confirmed,"Basidiomycota (syn. Hyphodontia argillaceum, Hyphoderma argillaceum)"
+Cairneyella,Cairneyella,variabilis,Confirmed,Ascomycota
+Gamarada,Gamarada,debralockiae,Confirmed,Ascomycota
+Hyaloscypha,Hyaloscypha,gryndleri,Probable,Probable ErMF
+Hyaloscypha,Hyaloscypha,variabilis,Probable,Probable ErMF + endophyte
+Hyaloscypha,Hyaloscypha,bicolor,Possible,EcMF + Possible ErMF + Endophyte (syn. Meliniomyces bicolor)
+Hyaloscypha,Melinomyces,bicolor,Possible,EcMF + Possible ErMF + Endophyte (syn. Meliniomyces bicolor)
+Hyaloscypha,Hyaloscypha,finlandica,Possible,EcMF + Possible ErMF + Endophyte (syn. Cadophora finlandica)
+Hyaloscypha,Cadophora,finlandica,Possible,EcMF + Possible ErMF + Endophyte (syn. Cadophora finlandica)
+Serendipita,Serendipita,spp.,Possible,https://link.springer.com/article/10.1007/s00572-016-0717-0#Sec16
+Lachnum,Lachnum,pygmaeum,Possible,https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2022.920338/full
+Hyaloscypha,Hyaloscypha,melinii,Unclear,(endophyte?); Vohnik ICOM12 presentation 2024
+Hyaloscypha,Hyaloscypha,gabretae,Unclear,(endophyte?); Vohnik ICOM12 presentation 2024
