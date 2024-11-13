@@ -38,10 +38,11 @@ weight_data$Sample_name <- toupper(weight_data$Sample_name)
 weight_data$Sample_name <- gsub('[\\. ()]', '', weight_data$Sample_name)
 weight_data$Sample_name <- gsub('(STEVENS)([1-9]$)', '\\10\\2', weight_data$Sample_name)
 
+
+weight_data[!(weight_data$Sample_name %in% metadata$Sample_name),]
+
 # write.csv(weight_data, 'Weight_H1_2023.csv', quote = F, row.names = F)
 # 
-# 
-# weight_data[!(weight_data$Sample_name %in% metadata$Sample_name),]
 # 
 # left_join(weight_data, 
 #           metadata %>% select(Sample_name, Sample_code), by = 'Sample_name')
