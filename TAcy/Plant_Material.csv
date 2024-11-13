@@ -1,487 +1,487 @@
-Sample_name,Row,Col,Population,Sample_id
-CNJ04239,1,28,ColorPanel,"CNJ04239 1,28"
-CNJ053440,1,20,ColorPanel,"CNJ053440 1,20"
-CNJ0823347,1,26,ColorPanel,"CNJ0823347 1,26"
-CNJ125602,1,21,ColorPanel,"CNJ125602 1,21"
-CNJ125604,1,22,ColorPanel,"CNJ125604 1,22"
-CNJ125605,1,23,ColorPanel,"CNJ125605 1,23"
-CNJ125606,1,24,ColorPanel,"CNJ125606 1,24"
-CNJ125607,1,25,ColorPanel,"CNJ125607 1,25"
-SD01,1,27,ColorPanel,"SD01 1,27"
-CNJ082331,2,20,ColorPanel,"CNJ082331 2,20"
-CNJ0823312,2,27,ColorPanel,"CNJ0823312 2,27"
-CNJ0823315,2,28,ColorPanel,"CNJ0823315 2,28"
-CNJ0823338,2,25,ColorPanel,"CNJ0823338 2,25"
-CNJ12561301,2,21,ColorPanel,"CNJ12561301 2,21"
-CNJ125614,2,23,ColorPanel,"CNJ125614 2,23"
-CNJ12561701,2,24,ColorPanel,"CNJ12561701 2,24"
-Stevens11,2,22,ColorPanel,"Stevens11 2,22"
-Stevens19,2,26,ColorPanel,"Stevens19 2,26"
-CNJ0823335,3,23,ColorPanel,"CNJ0823335 3,23"
-CNJ0823346,3,27,ColorPanel,"CNJ0823346 3,27"
-CNJ0823354,3,22,ColorPanel,"CNJ0823354 3,22"
-CNJ0823357,3,24,ColorPanel,"CNJ0823357 3,24"
-CNJ0823358,3,25,ColorPanel,"CNJ0823358 3,25"
-CNJ0823362,3,20,ColorPanel,"CNJ0823362 3,20"
-CNJ0823381,3,28,ColorPanel,"CNJ0823381 3,28"
-CNJ125631,3,21,ColorPanel,"CNJ125631 3,21"
-CNJ125643,3,26,ColorPanel,"CNJ125643 3,26"
-CNJ0423703,4,26,ColorPanel,"CNJ0423703 4,26"
-CNJ125650,4,20,ColorPanel,"CNJ125650 4,20"
-CNJ125651,4,21,ColorPanel,"CNJ125651 4,21"
-CNJ125652,4,22,ColorPanel,"CNJ125652 4,22"
-CNJ125654,4,23,ColorPanel,"CNJ125654 4,23"
-CNJ125656,4,27,ColorPanel,"CNJ125656 4,27"
-SD02,4,25,ColorPanel,"SD02 4,25"
-SD38,4,28,ColorPanel,"SD38 4,28"
-Stevens09,4,24,ColorPanel,"Stevens09 4,24"
-CNJ0823364,5,27,ColorPanel,"CNJ0823364 5,27"
-CNJ0823373,5,28,ColorPanel,"CNJ0823373 5,28"
-CNJ125658,5,20,ColorPanel,"CNJ125658 5,20"
-CNJ125659,5,22,ColorPanel,"CNJ125659 5,22"
-CNJ125663,5,25,ColorPanel,"CNJ125663 5,25"
-SD03,5,23,ColorPanel,"SD03 5,23"
-SD04,5,24,ColorPanel,"SD04 5,24"
-SD39,5,26,ColorPanel,"SD39 5,26"
-Stevens07,5,21,ColorPanel,"Stevens07 5,21"
-CNJ0423704,6,21,ColorPanel,"CNJ0423704 6,21"
-CNJ0823369,6,23,ColorPanel,"CNJ0823369 6,23"
-CNJ0823371,6,28,ColorPanel,"CNJ0823371 6,28"
-CNJ125667,6,20,ColorPanel,"CNJ125667 6,20"
-CNJ125668,6,22,ColorPanel,"CNJ125668 6,22"
-CNJ125671,6,25,ColorPanel,"CNJ125671 6,25"
-CNJ125673,6,26,ColorPanel,"CNJ125673 6,26"
-SD05,6,24,ColorPanel,"SD05 6,24"
-Stevens04,6,27,ColorPanel,"Stevens04 6,27"
-CNJ0823319,7,28,ColorPanel,"CNJ0823319 7,28"
-CNJ125677,7,21,ColorPanel,"CNJ125677 7,21"
-CNJ125685,7,22,ColorPanel,"CNJ125685 7,22"
-SD06,7,20,ColorPanel,"SD06 7,20"
-SD07,7,23,ColorPanel,"SD07 7,23"
-SD08,7,25,ColorPanel,"SD08 7,25"
-SD09,7,26,ColorPanel,"SD09 7,26"
-SD40,7,27,ColorPanel,"SD40 7,27"
-Stevens08,7,24,ColorPanel,"Stevens08 7,24"
-CNJ0823321,8,26,ColorPanel,"CNJ0823321 8,26"
-CNJ0823323,8,28,ColorPanel,"CNJ0823323 8,28"
-CNJ1256102,8,21,ColorPanel,"CNJ1256102 8,21"
-CNJ1256105,8,23,ColorPanel,"CNJ1256105 8,23"
-CNJ1256106,8,24,ColorPanel,"CNJ1256106 8,24"
-CNJ1256108,8,25,ColorPanel,"CNJ1256108 8,25"
-SD10,8,22,ColorPanel,"SD10 8,22"
-SD11,8,27,ColorPanel,"SD11 8,27"
-Stevens02,8,20,ColorPanel,"Stevens02 8,20"
-CNJ0823324,9,24,ColorPanel,"CNJ0823324 9,24"
-CNJ0823326,9,27,ColorPanel,"CNJ0823326 9,27"
-CNJ0823341,9,23,ColorPanel,"CNJ0823341 9,23"
-CNJ0823351,9,22,ColorPanel,"CNJ0823351 9,22"
-CNJ1256113,9,20,ColorPanel,"CNJ1256113 9,20"
-SD12,9,25,ColorPanel,"SD12 9,25"
-SD13,9,28,ColorPanel,"SD13 9,28"
-SD41,9,21,ColorPanel,"SD41 9,21"
-Stevens12,9,26,ColorPanel,"Stevens12 9,26"
-CNJ0823331,10,26,ColorPanel,"CNJ0823331 10,26"
-CNJ1256124,10,20,ColorPanel,"CNJ1256124 10,20"
-CNJ1256126,10,21,ColorPanel,"CNJ1256126 10,21"
-CNJ1256129,10,24,ColorPanel,"CNJ1256129 10,24"
-CNJ1256130,10,25,ColorPanel,"CNJ1256130 10,25"
-CNJ1256146,10,27,ColorPanel,"CNJ1256146 10,27"
-SD42,10,23,ColorPanel,"SD42 10,23"
-SD43,10,28,ColorPanel,"SD43 10,28"
-Stevens16,10,22,ColorPanel,"Stevens16 10,22"
-CNJ1256135,11,20,ColorPanel,"CNJ1256135 11,20"
-CNJ1256137,11,21,ColorPanel,"CNJ1256137 11,21"
-CNJ1256139,11,22,ColorPanel,"CNJ1256139 11,22"
-CNJ1256141,11,23,ColorPanel,"CNJ1256141 11,23"
-CNJ1256142,11,24,ColorPanel,"CNJ1256142 11,24"
-CNJ1256143,11,26,ColorPanel,"CNJ1256143 11,26"
-CNJ1256144,11,27,ColorPanel,"CNJ1256144 11,27"
-CNJ1256145,11,28,ColorPanel,"CNJ1256145 11,28"
-Stevens18,11,25,ColorPanel,"Stevens18 11,25"
-CNJ0423702,12,27,ColorPanel,"CNJ0423702 12,27"
-CNJ1256147,12,20,ColorPanel,"CNJ1256147 12,20"
-CNJ1256148,12,22,ColorPanel,"CNJ1256148 12,22"
-CNJ1256150,12,23,ColorPanel,"CNJ1256150 12,23"
-CNJ1256153,12,24,ColorPanel,"CNJ1256153 12,24"
-CNJ1256154,12,25,ColorPanel,"CNJ1256154 12,25"
-CNJ1256155,12,26,ColorPanel,"CNJ1256155 12,26"
-SD14,12,28,ColorPanel,"SD14 12,28"
-Stevens05,12,21,ColorPanel,"Stevens05 12,21"
-CNJ0823332,13,20,ColorPanel,"CNJ0823332 13,20"
-CNJ0823336,13,25,ColorPanel,"CNJ0823336 13,25"
-CNJ1256161,13,22,ColorPanel,"CNJ1256161 13,22"
-CNJ1256162,13,23,ColorPanel,"CNJ1256162 13,23"
-CNJ1256164,13,26,ColorPanel,"CNJ1256164 13,26"
-SD15,13,21,ColorPanel,"SD15 13,21"
-SD16,13,27,ColorPanel,"SD16 13,27"
-SD17,13,28,ColorPanel,"SD17 13,28"
-Stevens06,13,24,ColorPanel,"Stevens06 13,24"
-CNJ0423701,14,22,ColorPanel,"CNJ0423701 14,22"
-CNJ0823349,14,24,ColorPanel,"CNJ0823349 14,24"
-CNJ1256172,14,21,ColorPanel,"CNJ1256172 14,21"
-CNJ1256179,14,25,ColorPanel,"CNJ1256179 14,25"
-CNJ1256181,14,27,ColorPanel,"CNJ1256181 14,27"
-SD18,14,20,ColorPanel,"SD18 14,20"
-SD19,14,23,ColorPanel,"SD19 14,23"
-SD20,14,28,ColorPanel,"SD20 14,28"
-Stevens13,14,26,ColorPanel,"Stevens13 14,26"
-CNJ0823337,15,20,ColorPanel,"CNJ0823337 15,20"
-CNJ0823379,15,24,ColorPanel,"CNJ0823379 15,24"
-CNJ1256185,15,21,ColorPanel,"CNJ1256185 15,21"
-CNJ1256186,15,22,ColorPanel,"CNJ1256186 15,22"
-CNJ1256188,15,23,ColorPanel,"CNJ1256188 15,23"
-CNJ1256190,15,25,ColorPanel,"CNJ1256190 15,25"
-CNJ1256191,15,26,ColorPanel,"CNJ1256191 15,26"
-CNJ1256192,15,27,ColorPanel,"CNJ1256192 15,27"
-SD21,15,28,ColorPanel,"SD21 15,28"
-CNJ0823374,16,25,ColorPanel,"CNJ0823374 16,25"
-CNJ1256195,16,20,ColorPanel,"CNJ1256195 16,20"
-CNJ1256196,16,21,ColorPanel,"CNJ1256196 16,21"
-CNJ1256197,16,22,ColorPanel,"CNJ1256197 16,22"
-CNJ1256200,16,26,ColorPanel,"CNJ1256200 16,26"
-CNJ1256201,16,28,ColorPanel,"CNJ1256201 16,28"
-SD22,16,23,ColorPanel,"SD22 16,23"
-Stevens03,16,27,ColorPanel,"Stevens03 16,27"
-Stevens10,16,24,ColorPanel,"Stevens10 16,24"
-CNJ0823343,17,23,ColorPanel,"CNJ0823343 17,23"
-CNJ1256202,17,20,ColorPanel,"CNJ1256202 17,20"
-CNJ125801,17,22,ColorPanel,"CNJ125801 17,22"
-CNJ125803,17,24,ColorPanel,"CNJ125803 17,24"
-CNJ125804,17,25,ColorPanel,"CNJ125804 17,25"
-CNJ125805,17,26,ColorPanel,"CNJ125805 17,26"
-CNJ125807,17,27,ColorPanel,"CNJ125807 17,27"
-CNJ125809,17,28,ColorPanel,"CNJ125809 17,28"
-Stevens17,17,21,ColorPanel,"Stevens17 17,21"
-CNJ125810,18,20,ColorPanel,"CNJ125810 18,20"
-CNJ125811,18,21,ColorPanel,"CNJ125811 18,21"
-CNJ125812,18,22,ColorPanel,"CNJ125812 18,22"
-CNJ125813,18,23,ColorPanel,"CNJ125813 18,23"
-CNJ125815,18,24,ColorPanel,"CNJ125815 18,24"
-CNJ125816,18,26,ColorPanel,"CNJ125816 18,26"
-CNJ125817,18,27,ColorPanel,"CNJ125817 18,27"
-CNJ125820,18,28,ColorPanel,"CNJ125820 18,28"
-Stevens15,18,25,ColorPanel,"Stevens15 18,25"
-CNJ125821,19,20,ColorPanel,"CNJ125821 19,20"
-CNJ125822,19,21,ColorPanel,"CNJ125822 19,21"
-CNJ125823,19,23,ColorPanel,"CNJ125823 19,23"
-CNJ125824,19,24,ColorPanel,"CNJ125824 19,24"
-CNJ125825,19,25,ColorPanel,"CNJ125825 19,25"
-CNJ125826,19,26,ColorPanel,"CNJ125826 19,26"
-CNJ125827,19,28,ColorPanel,"CNJ125827 19,28"
-Stevens01,19,27,ColorPanel,"Stevens01 19,27"
-Stevens14,19,22,ColorPanel,"Stevens14 19,22"
-BenLear1284,20,28,ColorPanel,"BenLear1284 20,28"
-CNJ125828,20,20,ColorPanel,"CNJ125828 20,20"
-CNJ125829,20,21,ColorPanel,"CNJ125829 20,21"
-CNJ125830,20,22,ColorPanel,"CNJ125830 20,22"
-CNJ125831,20,23,ColorPanel,"CNJ125831 20,23"
-CNJ125832,20,24,ColorPanel,"CNJ125832 20,24"
-CNJ125833,20,25,ColorPanel,"CNJ125833 20,25"
-HyRed1605,20,26,ColorPanel,"HyRed1605 20,26"
-No351635,20,27,ColorPanel,"No351635 20,27"
-Sweetie23,22,2,SweetiePanel,Sweetie23
-Sweetie7,22,3,SweetiePanel,Sweetie7
-Sweetie38,23,15,SweetiePanel,Sweetie38
-Sweetie6,24,20,SweetiePanel,Sweetie6
-Sweetie11,26,22,SweetiePanel,Sweetie11
-Sweetie13,26,26,SweetiePanel,Sweetie13
-Sweetie29,26,7,SweetiePanel,Sweetie29
-Sweetie27,27,19,SweetiePanel,Sweetie27
-Sweetie3,27,11,SweetiePanel,Sweetie3
-Sweetie36,27,21,SweetiePanel,Sweetie36
-Sweetie35,28,20,SweetiePanel,Sweetie35
-Sweetie4,32,9,SweetiePanel,Sweetie4
-Sweetie8,34,1,SweetiePanel,Sweetie8
-Sweetie16,35,10,SweetiePanel,Sweetie16
-Sweetie34,35,19,SweetiePanel,Sweetie34
-Sweetie2,40,16,SweetiePanel,Sweetie2
-Sweetie14,42,43,SweetiePanel,Sweetie14
-Sweetie12,44,18,SweetiePanel,Sweetie12
-Sweetie17,44,6,SweetiePanel,Sweetie17
-Sweetie9,44,26,SweetiePanel,Sweetie9
-Sweetie26,46,12,SweetiePanel,Sweetie26
-Sweetie31,47,24,SweetiePanel,Sweetie31
-Sweetie20,49,5,SweetiePanel,Sweetie20
-Sweetie10,50,16,SweetiePanel,Sweetie10
-Sweetie32,50,26,SweetiePanel,Sweetie32
-Sweetie1,51,9,SweetiePanel,Sweetie1
-Sweetie24,51,27,SweetiePanel,Sweetie24
-Sweetie30,51,25,SweetiePanel,Sweetie30
-Sweetie15,54,28,SweetiePanel,Sweetie15
-Sweetie5,55,1,SweetiePanel,Sweetie5
-Sweetie18,57,4,SweetiePanel,Sweetie18
-Sweetie33,61,9,SweetiePanel,Sweetie33
-Sweetie21,64,15,SweetiePanel,Sweetie21
-Sweetie22,64,16,SweetiePanel,Sweetie22
-Sweetie37,67,3,SweetiePanel,Sweetie37
-Sweetie25,73,15,SweetiePanel,Sweetie25
-Sweetie19,74,2,SweetiePanel,Sweetie19
-Sweetie28,75,5,SweetiePanel,Sweetie28
-BainFav1,106,2,DiversityPanel,"BainFav1 106,2"
-BE4,106,3,DiversityPanel,"BE4 106,3"
-BenLear,106,4,DiversityPanel,"BenLear 106,4"
-Bergman,106,5,DiversityPanel,"Bergman 106,5"
-BG,106,6,DiversityPanel,"BG 106,6"
-BG48,106,7,DiversityPanel,"BG48 106,7"
-BGYellow,106,8,DiversityPanel,"BGYellow 106,8"
-BuddBlue,106,9,DiversityPanel,"BuddBlue 106,9"
-CrimsonQ,106,10,DiversityPanel,"CrimsonQ 106,10"
-D07,106,11,DiversityPanel,"D07 106,11"
-Demoranville,106,12,DiversityPanel,"Demoranville 106,12"
-EarlyBlack,106,13,DiversityPanel,"EarlyBlack 106,13"
-Franklin,106,14,DiversityPanel,"Franklin 106,14"
-GH1,106,15,DiversityPanel,"GH1 106,15"
-Harju,106,16,DiversityPanel,"Harju 106,16"
-Howes,106,17,DiversityPanel,"Howes 106,17"
-HyRed,106,18,DiversityPanel,"HyRed 106,18"
-J21,106,19,DiversityPanel,"J21 106,19"
-No35,106,1,DiversityPanel,"No35 106,1"
-LoRed,107,1,DiversityPanel,"LoRed 107,1"
-MullicaQ,107,3,DiversityPanel,"MullicaQ 107,3"
-PilgrimK,107,4,DiversityPanel,"PilgrimK 107,4"
-PottersFav,107,5,DiversityPanel,"PottersFav 107,5"
-RubyStar,107,6,DiversityPanel,"RubyStar 107,6"
-ST,107,7,DiversityPanel,"ST 107,7"
-Stevens08,107,2,DiversityPanel,"Stevens08 107,2"
-Sundance,107,8,DiversityPanel,"Sundance 107,8"
-V07,107,9,DiversityPanel,"V07 107,9"
-V11,107,10,DiversityPanel,"V11 107,10"
-Wilcox,107,11,DiversityPanel,"Wilcox 107,11"
-WSU108,107,12,DiversityPanel,"WSU108 107,12"
-YBS01,107,14,DiversityPanel,"YBS01 107,14"
-YBS02,107,15,DiversityPanel,"YBS02 107,15"
-YBS05,107,16,DiversityPanel,"YBS05 107,16"
-YBS06,107,17,DiversityPanel,"YBS06 107,17"
-YBS07,107,18,DiversityPanel,"YBS07 107,18"
-YBS08,107,19,DiversityPanel,"YBS08 107,19"
-YellowBell,107,13,DiversityPanel,"YellowBell 107,13"
-MG02,108,16,DiversityPanel,"MG02 108,16"
-MG03,108,17,DiversityPanel,"MG03 108,17"
-MG04,108,18,DiversityPanel,"MG04 108,18"
-MG07,108,19,DiversityPanel,"MG07 108,19"
-Stevens07,108,3,DiversityPanel,"Stevens07 108,3"
-YBS09,108,1,DiversityPanel,"YBS09 108,1"
-YBS10,108,2,DiversityPanel,"YBS10 108,2"
-YBS11,108,4,DiversityPanel,"YBS11 108,4"
-YBS12,108,5,DiversityPanel,"YBS12 108,5"
-YBS13,108,6,DiversityPanel,"YBS13 108,6"
-YBS14,108,7,DiversityPanel,"YBS14 108,7"
-YBS16,108,8,DiversityPanel,"YBS16 108,8"
-YBS17,108,9,DiversityPanel,"YBS17 108,9"
-YBS18,108,10,DiversityPanel,"YBS18 108,10"
-YBS19,108,11,DiversityPanel,"YBS19 108,11"
-YBS20,108,12,DiversityPanel,"YBS20 108,12"
-YBS21,108,13,DiversityPanel,"YBS21 108,13"
-YBS22,108,14,DiversityPanel,"YBS22 108,14"
-YBS23,108,15,DiversityPanel,"YBS23 108,15"
-CNJ1049,109,5,DiversityPanel,"CNJ1049 109,5"
-DP14,109,15,DiversityPanel,"DP14 109,15"
-DP17,109,16,DiversityPanel,"DP17 109,16"
-MG09,109,1,DiversityPanel,"MG09 109,1"
-MG12,109,2,DiversityPanel,"MG12 109,2"
-MurphysG,109,4,DiversityPanel,"MurphysG 109,4"
-MurphysGA,109,3,DiversityPanel,"MurphysGA 109,3"
-QS01,109,6,DiversityPanel,"QS01 109,6"
-QS02,109,7,DiversityPanel,"QS02 109,7"
-QS03,109,8,DiversityPanel,"QS03 109,8"
-QS04,109,10,DiversityPanel,"QS04 109,10"
-QS05,109,11,DiversityPanel,"QS05 109,11"
-QS06,109,12,DiversityPanel,"QS06 109,12"
-QS07,109,13,DiversityPanel,"QS07 109,13"
-QS08,109,14,DiversityPanel,"QS08 109,14"
-Stevens04,109,9,DiversityPanel,"Stevens04 109,9"
-Stevens05,109,19,DiversityPanel,"Stevens05 109,19"
-WC12001,109,18,DiversityPanel,"WC12001 109,18"
-WC16026,109,17,DiversityPanel,"WC16026 109,17"
-Stevens09,110,11,DiversityPanel,"Stevens09 110,11"
-Stevens15,110,12,DiversityPanel,"Stevens15 110,12"
-WC12-114,110,15,DiversityPanel,"WC12-114 110,15"
-WC12006,110,1,DiversityPanel,"WC12006 110,1"
-WC12008,110,2,DiversityPanel,"WC12008 110,2"
-WC12012,110,3,DiversityPanel,"WC12012 110,3"
-WC12014,110,4,DiversityPanel,"WC12014 110,4"
-WC12017,110,5,DiversityPanel,"WC12017 110,5"
-WC12032,110,6,DiversityPanel,"WC12032 110,6"
-WC12090,110,7,DiversityPanel,"WC12090 110,7"
-WC12091,110,8,DiversityPanel,"WC12091 110,8"
-WC12101,110,9,DiversityPanel,"WC12101 110,9"
-WC12104,110,10,DiversityPanel,"WC12104 110,10"
-WC12110,110,13,DiversityPanel,"WC12110 110,13"
-WC12112,110,14,DiversityPanel,"WC12112 110,14"
-WC12131,110,16,DiversityPanel,"WC12131 110,16"
-WC12132,110,17,DiversityPanel,"WC12132 110,17"
-WC12133,110,18,DiversityPanel,"WC12133 110,18"
-WC12153,110,19,DiversityPanel,"WC12153 110,19"
-WC121190,111,9,DiversityPanel,"WC121190 111,9"
-WC12199,111,1,DiversityPanel,"WC12199 111,1"
-WC12221,111,2,DiversityPanel,"WC12221 111,2"
-WC12232,111,3,DiversityPanel,"WC12232 111,3"
-WC12280,111,4,DiversityPanel,"WC12280 111,4"
-WC12288,111,5,DiversityPanel,"WC12288 111,5"
-WC12325,111,6,DiversityPanel,"WC12325 111,6"
-WC12326,111,7,DiversityPanel,"WC12326 111,7"
-WC12332,111,8,DiversityPanel,"WC12332 111,8"
-WC16004,111,10,DiversityPanel,"WC16004 111,10"
-WC16011,111,11,DiversityPanel,"WC16011 111,11"
-WC16014,111,12,DiversityPanel,"WC16014 111,12"
-WC16017,111,13,DiversityPanel,"WC16017 111,13"
-WC16018,111,14,DiversityPanel,"WC16018 111,14"
-WC16023,111,15,DiversityPanel,"WC16023 111,15"
-WC16027,111,16,DiversityPanel,"WC16027 111,16"
-WC16029,111,17,DiversityPanel,"WC16029 111,17"
-WC16034,111,18,DiversityPanel,"WC16034 111,18"
-WC16036,111,19,DiversityPanel,"WC16036 111,19"
-Stevens03,112,10,DiversityPanel,"Stevens03 112,10"
-WC16037,112,1,DiversityPanel,"WC16037 112,1"
-WC16040,112,2,DiversityPanel,"WC16040 112,2"
-WC16041,112,3,DiversityPanel,"WC16041 112,3"
-WC16042,112,4,DiversityPanel,"WC16042 112,4"
-WC16043,112,5,DiversityPanel,"WC16043 112,5"
-WC16049,112,6,DiversityPanel,"WC16049 112,6"
-WC16051,112,7,DiversityPanel,"WC16051 112,7"
-WC16054,112,8,DiversityPanel,"WC16054 112,8"
-WC16056,112,9,DiversityPanel,"WC16056 112,9"
-WC16058,112,11,DiversityPanel,"WC16058 112,11"
-WC16059,112,12,DiversityPanel,"WC16059 112,12"
-WC16060,112,13,DiversityPanel,"WC16060 112,13"
-WC16061,112,14,DiversityPanel,"WC16061 112,14"
-WC16062,112,15,DiversityPanel,"WC16062 112,15"
-WC16063,112,16,DiversityPanel,"WC16063 112,16"
-WC16066,112,17,DiversityPanel,"WC16066 112,17"
-WC16067,112,18,DiversityPanel,"WC16067 112,18"
-WC16068,112,19,DiversityPanel,"WC16068 112,19"
-A41SX3,113,10,DiversityPanel,"A41SX3 113,10"
-A41SX8,113,11,DiversityPanel,"A41SX8 113,11"
-BL03,113,13,DiversityPanel,"BL03 113,13"
-BL04,113,15,DiversityPanel,"BL04 113,15"
-BL05,113,16,DiversityPanel,"BL05 113,16"
-BL09,113,17,DiversityPanel,"BL09 113,17"
-BL10,113,18,DiversityPanel,"BL10 113,18"
-BL14,113,19,DiversityPanel,"BL14 113,19"
-D8S,113,12,DiversityPanel,"D8S 113,12"
-Stevens11,113,5,DiversityPanel,"Stevens11 113,5"
-Stevens13,113,14,DiversityPanel,"Stevens13 113,14"
-WC16070,113,1,DiversityPanel,"WC16070 113,1"
-WC16071,113,2,DiversityPanel,"WC16071 113,2"
-WC16072,113,3,DiversityPanel,"WC16072 113,3"
-WC16073,113,4,DiversityPanel,"WC16073 113,4"
-WC17001,113,6,DiversityPanel,"WC17001 113,6"
-WC17002,113,7,DiversityPanel,"WC17002 113,7"
-WC17003,113,8,DiversityPanel,"WC17003 113,8"
-WC17004,113,9,DiversityPanel,"WC17004 113,9"
-BL18,114,1,DiversityPanel,"BL18 114,1"
-BL19,114,2,DiversityPanel,"BL19 114,2"
-BLM01,114,3,DiversityPanel,"BLM01 114,3"
-Chip01,114,4,DiversityPanel,"Chip01 114,4"
-Chip03,114,5,DiversityPanel,"Chip03 114,5"
-Chip05,114,6,DiversityPanel,"Chip05 114,6"
-Chip07,114,7,DiversityPanel,"Chip07 114,7"
-Chip08,114,8,DiversityPanel,"Chip08 114,8"
-Chip10,114,9,DiversityPanel,"Chip10 114,9"
-Chip17,114,10,DiversityPanel,"Chip17 114,10"
-FRLK12,114,11,DiversityPanel,"FRLK12 114,11"
-GYPL17,114,12,DiversityPanel,"GYPL17 114,12"
-GYPL18,114,13,DiversityPanel,"GYPL18 114,13"
-GYPL19,114,14,DiversityPanel,"GYPL19 114,14"
-GYPL28,114,15,DiversityPanel,"GYPL28 114,15"
-GYPL31,114,16,DiversityPanel,"GYPL31 114,16"
-GYPL32,114,17,DiversityPanel,"GYPL32 114,17"
-HAWL05,114,18,DiversityPanel,"HAWL05 114,18"
-HW05,114,19,DiversityPanel,"HW05 114,19"
-HW12,115,1,DiversityPanel,"HW12 115,1"
-KLB17,115,2,DiversityPanel,"KLB17 115,2"
-LL07,115,3,DiversityPanel,"LL07 115,3"
-LL08,115,5,DiversityPanel,"LL08 115,5"
-LL12,115,6,DiversityPanel,"LL12 115,6"
-LL13,115,7,DiversityPanel,"LL13 115,7"
-LL14,115,8,DiversityPanel,"LL14 115,8"
-LL15,115,9,DiversityPanel,"LL15 115,9"
-LOLM01,115,11,DiversityPanel,"LOLM01 115,11"
-LOLM03,115,12,DiversityPanel,"LOLM03 115,12"
-LOLM07,115,13,DiversityPanel,"LOLM07 115,13"
-LOLM11,115,14,DiversityPanel,"LOLM11 115,14"
-LOLM12,115,15,DiversityPanel,"LOLM12 115,15"
-LRL01,115,16,DiversityPanel,"LRL01 115,16"
-LRL02,115,17,DiversityPanel,"LRL02 115,17"
-LRL03,115,18,DiversityPanel,"LRL03 115,18"
-LRL04,115,19,DiversityPanel,"LRL04 115,19"
-Stevens02,115,10,DiversityPanel,"Stevens02 115,10"
-Stevens12,115,4,DiversityPanel,"Stevens12 115,4"
-LorrainWU,116,15,DiversityPanel,"LorrainWU 116,15"
-LRL05,116,1,DiversityPanel,"LRL05 116,1"
-LRL10,116,2,DiversityPanel,"LRL10 116,2"
-LRL11,116,3,DiversityPanel,"LRL11 116,3"
-LRL15,116,4,DiversityPanel,"LRL15 116,4"
-LRL18,116,5,DiversityPanel,"LRL18 116,5"
-PMW02,116,6,DiversityPanel,"PMW02 116,6"
-PMW16,116,7,DiversityPanel,"PMW16 116,7"
-PMW20,116,8,DiversityPanel,"PMW20 116,8"
-SEB15,116,9,DiversityPanel,"SEB15 116,9"
-SHPL13,116,10,DiversityPanel,"SHPL13 116,10"
-Stevens10,116,17,DiversityPanel,"Stevens10 116,17"
-Stevens14,116,12,DiversityPanel,"Stevens14 116,12"
-WABL04,116,11,DiversityPanel,"WABL04 116,11"
-WABL06,116,13,DiversityPanel,"WABL06 116,13"
-WABL11,116,14,DiversityPanel,"WABL11 116,14"
-WC170071,116,16,DiversityPanel,"WC170071 116,16"
-WC170077,116,18,DiversityPanel,"WC170077 116,18"
-WC170081,116,19,DiversityPanel,"WC170081 116,19"
-WC170131,117,1,DiversityPanel,"WC170131 117,1"
-WC170135,117,2,DiversityPanel,"WC170135 117,2"
-WC170141,117,3,DiversityPanel,"WC170141 117,3"
-WC170203,117,4,DiversityPanel,"WC170203 117,4"
-WC17022,117,5,DiversityPanel,"WC17022 117,5"
-WC170238,117,6,DiversityPanel,"WC170238 117,6"
-WC170241,117,7,DiversityPanel,"WC170241 117,7"
-WC170251,117,8,DiversityPanel,"WC170251 117,8"
-WC170252,117,9,DiversityPanel,"WC170252 117,9"
-WC170263,117,10,DiversityPanel,"WC170263 117,10"
-WC170266,117,11,DiversityPanel,"WC170266 117,11"
-WC170271,117,12,DiversityPanel,"WC170271 117,12"
-WC170272,117,13,DiversityPanel,"WC170272 117,13"
-WC170273,117,14,DiversityPanel,"WC170273 117,14"
-WC170274,117,15,DiversityPanel,"WC170274 117,15"
-WC170275,117,16,DiversityPanel,"WC170275 117,16"
-WC170276,117,17,DiversityPanel,"WC170276 117,17"
-WC170277,117,18,DiversityPanel,"WC170277 117,18"
-WC170361,117,19,DiversityPanel,"WC170361 117,19"
-Stevens01,118,6,DiversityPanel,"Stevens01 118,6"
-WC170367,118,1,DiversityPanel,"WC170367 118,1"
-WC170371,118,2,DiversityPanel,"WC170371 118,2"
-WC170381,118,3,DiversityPanel,"WC170381 118,3"
-WC170382,118,4,DiversityPanel,"WC170382 118,4"
-WC170391,118,5,DiversityPanel,"WC170391 118,5"
-WC170411,118,7,DiversityPanel,"WC170411 118,7"
-WC170421,118,8,DiversityPanel,"WC170421 118,8"
-WC170431,118,9,DiversityPanel,"WC170431 118,9"
-WC170438,118,10,DiversityPanel,"WC170438 118,10"
-WC170461,118,11,DiversityPanel,"WC170461 118,11"
-WC170465,118,12,DiversityPanel,"WC170465 118,12"
-WC170471,118,13,DiversityPanel,"WC170471 118,13"
-WC170473,118,14,DiversityPanel,"WC170473 118,14"
-WC170477,118,15,DiversityPanel,"WC170477 118,15"
-WC170503,118,16,DiversityPanel,"WC170503 118,16"
-WC170521,118,17,DiversityPanel,"WC170521 118,17"
-WC170523,118,18,DiversityPanel,"WC170523 118,18"
-WC170533,118,19,DiversityPanel,"WC170533 118,19"
-Stevens16,119,12,DiversityPanel,"Stevens16 119,12"
-WC170534,119,1,DiversityPanel,"WC170534 119,1"
-WC170572,119,2,DiversityPanel,"WC170572 119,2"
-WC170621,119,3,DiversityPanel,"WC170621 119,3"
-WC17063,119,4,DiversityPanel,"WC17063 119,4"
-WC17064,119,5,DiversityPanel,"WC17064 119,5"
-WC170651,119,6,DiversityPanel,"WC170651 119,6"
-WC170652,119,7,DiversityPanel,"WC170652 119,7"
-WC170653,119,8,DiversityPanel,"WC170653 119,8"
-WC170701,119,9,DiversityPanel,"WC170701 119,9"
-WC170707,119,10,DiversityPanel,"WC170707 119,10"
-WC170721,119,11,DiversityPanel,"WC170721 119,11"
-WC170743,119,13,DiversityPanel,"WC170743 119,13"
-WC170745,119,14,DiversityPanel,"WC170745 119,14"
-WC170794,119,15,DiversityPanel,"WC170794 119,15"
-WC170811,119,16,DiversityPanel,"WC170811 119,16"
-WC170861,119,17,DiversityPanel,"WC170861 119,17"
-WC170906,119,18,DiversityPanel,"WC170906 119,18"
-WC170992,119,19,DiversityPanel,"WC170992 119,19"
-Sweetie39,,,SweetiePanel,Sweetie39
-Sweetie40,,,SweetiePanel,Sweetie40
+Sample_name,Row,Col,Population,Sample_code
+CNJ04239,1,28,ColorPanel,1-28
+CNJ053440,1,20,ColorPanel,1-20
+CNJ0823347,1,26,ColorPanel,1-26
+CNJ125602,1,21,ColorPanel,1-21
+CNJ125604,1,22,ColorPanel,1-22
+CNJ125605,1,23,ColorPanel,1-23
+CNJ125606,1,24,ColorPanel,1-24
+CNJ125607,1,25,ColorPanel,1-25
+SD01,1,27,ColorPanel,1-27
+CNJ082331,2,20,ColorPanel,2-20
+CNJ0823312,2,27,ColorPanel,2-27
+CNJ0823315,2,28,ColorPanel,2-28
+CNJ0823338,2,25,ColorPanel,2-25
+CNJ12561301,2,21,ColorPanel,2-21
+CNJ125614,2,23,ColorPanel,2-23
+CNJ12561701,2,24,ColorPanel,2-24
+Stevens11,2,22,ColorPanel,2-22
+Stevens19,2,26,ColorPanel,2-26
+CNJ0823335,3,23,ColorPanel,3-23
+CNJ0823346,3,27,ColorPanel,3-27
+CNJ0823354,3,22,ColorPanel,3-22
+CNJ0823357,3,24,ColorPanel,3-24
+CNJ0823358,3,25,ColorPanel,3-25
+CNJ0823362,3,20,ColorPanel,3-20
+CNJ0823381,3,28,ColorPanel,3-28
+CNJ125631,3,21,ColorPanel,3-21
+CNJ125643,3,26,ColorPanel,3-26
+CNJ0423703,4,26,ColorPanel,4-26
+CNJ125650,4,20,ColorPanel,4-20
+CNJ125651,4,21,ColorPanel,4-21
+CNJ125652,4,22,ColorPanel,4-22
+CNJ125654,4,23,ColorPanel,4-23
+CNJ125656,4,27,ColorPanel,4-27
+SD02,4,25,ColorPanel,4-25
+SD38,4,28,ColorPanel,4-28
+Stevens09,4,24,ColorPanel,4-24
+CNJ0823364,5,27,ColorPanel,5-27
+CNJ0823373,5,28,ColorPanel,5-28
+CNJ125658,5,20,ColorPanel,5-20
+CNJ125659,5,22,ColorPanel,5-22
+CNJ125663,5,25,ColorPanel,5-25
+SD03,5,23,ColorPanel,5-23
+SD04,5,24,ColorPanel,5-24
+SD39,5,26,ColorPanel,5-26
+Stevens07,5,21,ColorPanel,5-21
+CNJ0423704,6,21,ColorPanel,6-21
+CNJ0823369,6,23,ColorPanel,6-23
+CNJ0823371,6,28,ColorPanel,6-28
+CNJ125667,6,20,ColorPanel,6-20
+CNJ125668,6,22,ColorPanel,6-22
+CNJ125671,6,25,ColorPanel,6-25
+CNJ125673,6,26,ColorPanel,6-26
+SD05,6,24,ColorPanel,6-24
+Stevens04,6,27,ColorPanel,6-27
+CNJ0823319,7,28,ColorPanel,7-28
+CNJ125677,7,21,ColorPanel,7-21
+CNJ125685,7,22,ColorPanel,7-22
+SD06,7,20,ColorPanel,7-20
+SD07,7,23,ColorPanel,7-23
+SD08,7,25,ColorPanel,7-25
+SD09,7,26,ColorPanel,7-26
+SD40,7,27,ColorPanel,7-27
+Stevens08,7,24,ColorPanel,7-24
+CNJ0823321,8,26,ColorPanel,8-26
+CNJ0823323,8,28,ColorPanel,8-28
+CNJ1256102,8,21,ColorPanel,8-21
+CNJ1256105,8,23,ColorPanel,8-23
+CNJ1256106,8,24,ColorPanel,8-24
+CNJ1256108,8,25,ColorPanel,8-25
+SD10,8,22,ColorPanel,8-22
+SD11,8,27,ColorPanel,8-27
+Stevens02,8,20,ColorPanel,8-20
+CNJ0823324,9,24,ColorPanel,9-24
+CNJ0823326,9,27,ColorPanel,9-27
+CNJ0823341,9,23,ColorPanel,9-23
+CNJ0823351,9,22,ColorPanel,9-22
+CNJ1256113,9,20,ColorPanel,9-20
+SD12,9,25,ColorPanel,9-25
+SD13,9,28,ColorPanel,9-28
+SD41,9,21,ColorPanel,9-21
+Stevens12,9,26,ColorPanel,9-26
+CNJ0823331,10,26,ColorPanel,10-26
+CNJ1256124,10,20,ColorPanel,10-20
+CNJ1256126,10,21,ColorPanel,10-21
+CNJ1256129,10,24,ColorPanel,10-24
+CNJ1256130,10,25,ColorPanel,10-25
+CNJ1256146,10,27,ColorPanel,10-27
+SD42,10,23,ColorPanel,10-23
+SD43,10,28,ColorPanel,10-28
+Stevens16,10,22,ColorPanel,10-22
+CNJ1256135,11,20,ColorPanel,11-20
+CNJ1256137,11,21,ColorPanel,11-21
+CNJ1256139,11,22,ColorPanel,11-22
+CNJ1256141,11,23,ColorPanel,11-23
+CNJ1256142,11,24,ColorPanel,11-24
+CNJ1256143,11,26,ColorPanel,11-26
+CNJ1256144,11,27,ColorPanel,11-27
+CNJ1256145,11,28,ColorPanel,11-28
+Stevens18,11,25,ColorPanel,11-25
+CNJ0423702,12,27,ColorPanel,12-27
+CNJ1256147,12,20,ColorPanel,12-20
+CNJ1256148,12,22,ColorPanel,12-22
+CNJ1256150,12,23,ColorPanel,12-23
+CNJ1256153,12,24,ColorPanel,12-24
+CNJ1256154,12,25,ColorPanel,12-25
+CNJ1256155,12,26,ColorPanel,12-26
+SD14,12,28,ColorPanel,12-28
+Stevens05,12,21,ColorPanel,12-21
+CNJ0823332,13,20,ColorPanel,13-20
+CNJ0823336,13,25,ColorPanel,13-25
+CNJ1256161,13,22,ColorPanel,13-22
+CNJ1256162,13,23,ColorPanel,13-23
+CNJ1256164,13,26,ColorPanel,13-26
+SD15,13,21,ColorPanel,13-21
+SD16,13,27,ColorPanel,13-27
+SD17,13,28,ColorPanel,13-28
+Stevens06,13,24,ColorPanel,13-24
+CNJ0423701,14,22,ColorPanel,14-22
+CNJ0823349,14,24,ColorPanel,14-24
+CNJ1256172,14,21,ColorPanel,14-21
+CNJ1256179,14,25,ColorPanel,14-25
+CNJ1256181,14,27,ColorPanel,14-27
+SD18,14,20,ColorPanel,14-20
+SD19,14,23,ColorPanel,14-23
+SD20,14,28,ColorPanel,14-28
+Stevens13,14,26,ColorPanel,14-26
+CNJ0823337,15,20,ColorPanel,15-20
+CNJ0823379,15,24,ColorPanel,15-24
+CNJ1256185,15,21,ColorPanel,15-21
+CNJ1256186,15,22,ColorPanel,15-22
+CNJ1256188,15,23,ColorPanel,15-23
+CNJ1256190,15,25,ColorPanel,15-25
+CNJ1256191,15,26,ColorPanel,15-26
+CNJ1256192,15,27,ColorPanel,15-27
+SD21,15,28,ColorPanel,15-28
+CNJ0823374,16,25,ColorPanel,16-25
+CNJ1256195,16,20,ColorPanel,16-20
+CNJ1256196,16,21,ColorPanel,16-21
+CNJ1256197,16,22,ColorPanel,16-22
+CNJ1256200,16,26,ColorPanel,16-26
+CNJ1256201,16,28,ColorPanel,16-28
+SD22,16,23,ColorPanel,16-23
+Stevens03,16,27,ColorPanel,16-27
+Stevens10,16,24,ColorPanel,16-24
+CNJ0823343,17,23,ColorPanel,17-23
+CNJ1256202,17,20,ColorPanel,17-20
+CNJ125801,17,22,ColorPanel,17-22
+CNJ125803,17,24,ColorPanel,17-24
+CNJ125804,17,25,ColorPanel,17-25
+CNJ125805,17,26,ColorPanel,17-26
+CNJ125807,17,27,ColorPanel,17-27
+CNJ125809,17,28,ColorPanel,17-28
+Stevens17,17,21,ColorPanel,17-21
+CNJ125810,18,20,ColorPanel,18-20
+CNJ125811,18,21,ColorPanel,18-21
+CNJ125812,18,22,ColorPanel,18-22
+CNJ125813,18,23,ColorPanel,18-23
+CNJ125815,18,24,ColorPanel,18-24
+CNJ125816,18,26,ColorPanel,18-26
+CNJ125817,18,27,ColorPanel,18-27
+CNJ125820,18,28,ColorPanel,18-28
+Stevens15,18,25,ColorPanel,18-25
+CNJ125821,19,20,ColorPanel,19-20
+CNJ125822,19,21,ColorPanel,19-21
+CNJ125823,19,23,ColorPanel,19-23
+CNJ125824,19,24,ColorPanel,19-24
+CNJ125825,19,25,ColorPanel,19-25
+CNJ125826,19,26,ColorPanel,19-26
+CNJ125827,19,28,ColorPanel,19-28
+Stevens01,19,27,ColorPanel,19-27
+Stevens14,19,22,ColorPanel,19-22
+BenLear1284,20,28,ColorPanel,20-28
+CNJ125828,20,20,ColorPanel,20-20
+CNJ125829,20,21,ColorPanel,20-21
+CNJ125830,20,22,ColorPanel,20-22
+CNJ125831,20,23,ColorPanel,20-23
+CNJ125832,20,24,ColorPanel,20-24
+CNJ125833,20,25,ColorPanel,20-25
+HyRed1605,20,26,ColorPanel,20-26
+No351635,20,27,ColorPanel,20-27
+Sweetie23,22,2,SweetiePanel,22-2
+Sweetie7,22,3,SweetiePanel,22-3
+Sweetie38,23,15,SweetiePanel,23-15
+Sweetie6,24,20,SweetiePanel,24-20
+Sweetie11,26,22,SweetiePanel,26-22
+Sweetie13,26,26,SweetiePanel,26-26
+Sweetie29,26,7,SweetiePanel,26-7
+Sweetie27,27,19,SweetiePanel,27-19
+Sweetie3,27,11,SweetiePanel,27-11
+Sweetie36,27,21,SweetiePanel,27-21
+Sweetie35,28,20,SweetiePanel,28-20
+Sweetie4,32,9,SweetiePanel,32-9
+Sweetie8,34,1,SweetiePanel,34-1
+Sweetie16,35,10,SweetiePanel,35-10
+Sweetie34,35,19,SweetiePanel,35-19
+Sweetie2,40,16,SweetiePanel,40-16
+Sweetie14,42,43,SweetiePanel,42-43
+Sweetie12,44,18,SweetiePanel,44-18
+Sweetie17,44,6,SweetiePanel,44-6
+Sweetie9,44,26,SweetiePanel,44-26
+Sweetie26,46,12,SweetiePanel,46-12
+Sweetie31,47,24,SweetiePanel,47-24
+Sweetie20,49,5,SweetiePanel,49-5
+Sweetie10,50,16,SweetiePanel,50-16
+Sweetie32,50,26,SweetiePanel,50-26
+Sweetie1,51,9,SweetiePanel,51-9
+Sweetie24,51,27,SweetiePanel,51-27
+Sweetie30,51,25,SweetiePanel,51-25
+Sweetie15,54,28,SweetiePanel,54-28
+Sweetie5,55,1,SweetiePanel,55-1
+Sweetie18,57,4,SweetiePanel,57-4
+Sweetie33,61,9,SweetiePanel,61-9
+Sweetie21,64,15,SweetiePanel,64-15
+Sweetie22,64,16,SweetiePanel,64-16
+Sweetie37,67,3,SweetiePanel,67-3
+Sweetie25,73,15,SweetiePanel,73-15
+Sweetie19,74,2,SweetiePanel,74-2
+Sweetie28,75,5,SweetiePanel,75-5
+BainFav1,106,2,DiversityPanel,106-2
+BE4,106,3,DiversityPanel,106-3
+BenLear,106,4,DiversityPanel,106-4
+Bergman,106,5,DiversityPanel,106-5
+BG,106,6,DiversityPanel,106-6
+BG48,106,7,DiversityPanel,106-7
+BGYellow,106,8,DiversityPanel,106-8
+BuddBlue,106,9,DiversityPanel,106-9
+CrimsonQ,106,10,DiversityPanel,106-10
+D07,106,11,DiversityPanel,106-11
+Demoranville,106,12,DiversityPanel,106-12
+EarlyBlack,106,13,DiversityPanel,106-13
+Franklin,106,14,DiversityPanel,106-14
+GH1,106,15,DiversityPanel,106-15
+Harju,106,16,DiversityPanel,106-16
+Howes,106,17,DiversityPanel,106-17
+HyRed,106,18,DiversityPanel,106-18
+J21,106,19,DiversityPanel,106-19
+No35,106,1,DiversityPanel,106-1
+LoRed,107,1,DiversityPanel,107-1
+MullicaQ,107,3,DiversityPanel,107-3
+PilgrimK,107,4,DiversityPanel,107-4
+PottersFav,107,5,DiversityPanel,107-5
+RubyStar,107,6,DiversityPanel,107-6
+ST,107,7,DiversityPanel,107-7
+Stevens08,107,2,DiversityPanel,107-2
+Sundance,107,8,DiversityPanel,107-8
+V07,107,9,DiversityPanel,107-9
+V11,107,10,DiversityPanel,107-10
+Wilcox,107,11,DiversityPanel,107-11
+WSU108,107,12,DiversityPanel,107-12
+YBS01,107,14,DiversityPanel,107-14
+YBS02,107,15,DiversityPanel,107-15
+YBS05,107,16,DiversityPanel,107-16
+YBS06,107,17,DiversityPanel,107-17
+YBS07,107,18,DiversityPanel,107-18
+YBS08,107,19,DiversityPanel,107-19
+YellowBell,107,13,DiversityPanel,107-13
+MG02,108,16,DiversityPanel,108-16
+MG03,108,17,DiversityPanel,108-17
+MG04,108,18,DiversityPanel,108-18
+MG07,108,19,DiversityPanel,108-19
+Stevens07,108,3,DiversityPanel,108-3
+YBS09,108,1,DiversityPanel,108-1
+YBS10,108,2,DiversityPanel,108-2
+YBS11,108,4,DiversityPanel,108-4
+YBS12,108,5,DiversityPanel,108-5
+YBS13,108,6,DiversityPanel,108-6
+YBS14,108,7,DiversityPanel,108-7
+YBS16,108,8,DiversityPanel,108-8
+YBS17,108,9,DiversityPanel,108-9
+YBS18,108,10,DiversityPanel,108-10
+YBS19,108,11,DiversityPanel,108-11
+YBS20,108,12,DiversityPanel,108-12
+YBS21,108,13,DiversityPanel,108-13
+YBS22,108,14,DiversityPanel,108-14
+YBS23,108,15,DiversityPanel,108-15
+CNJ1049,109,5,DiversityPanel,109-5
+DP14,109,15,DiversityPanel,109-15
+DP17,109,16,DiversityPanel,109-16
+MG09,109,1,DiversityPanel,109-1
+MG12,109,2,DiversityPanel,109-2
+MurphysG,109,4,DiversityPanel,109-4
+MurphysGA,109,3,DiversityPanel,109-3
+QS01,109,6,DiversityPanel,109-6
+QS02,109,7,DiversityPanel,109-7
+QS03,109,8,DiversityPanel,109-8
+QS04,109,10,DiversityPanel,109-10
+QS05,109,11,DiversityPanel,109-11
+QS06,109,12,DiversityPanel,109-12
+QS07,109,13,DiversityPanel,109-13
+QS08,109,14,DiversityPanel,109-14
+Stevens04,109,9,DiversityPanel,109-9
+Stevens05,109,19,DiversityPanel,109-19
+WC12001,109,18,DiversityPanel,109-18
+WC16026,109,17,DiversityPanel,109-17
+Stevens09,110,11,DiversityPanel,110-11
+Stevens15,110,12,DiversityPanel,110-12
+WC12-114,110,15,DiversityPanel,110-15
+WC12006,110,1,DiversityPanel,110-1
+WC12008,110,2,DiversityPanel,110-2
+WC12012,110,3,DiversityPanel,110-3
+WC12014,110,4,DiversityPanel,110-4
+WC12017,110,5,DiversityPanel,110-5
+WC12032,110,6,DiversityPanel,110-6
+WC12090,110,7,DiversityPanel,110-7
+WC12091,110,8,DiversityPanel,110-8
+WC12101,110,9,DiversityPanel,110-9
+WC12104,110,10,DiversityPanel,110-10
+WC12110,110,13,DiversityPanel,110-13
+WC12112,110,14,DiversityPanel,110-14
+WC12131,110,16,DiversityPanel,110-16
+WC12132,110,17,DiversityPanel,110-17
+WC12133,110,18,DiversityPanel,110-18
+WC12153,110,19,DiversityPanel,110-19
+WC121190,111,9,DiversityPanel,111-9
+WC12199,111,1,DiversityPanel,111-1
+WC12221,111,2,DiversityPanel,111-2
+WC12232,111,3,DiversityPanel,111-3
+WC12280,111,4,DiversityPanel,111-4
+WC12288,111,5,DiversityPanel,111-5
+WC12325,111,6,DiversityPanel,111-6
+WC12326,111,7,DiversityPanel,111-7
+WC12332,111,8,DiversityPanel,111-8
+WC16004,111,10,DiversityPanel,111-10
+WC16011,111,11,DiversityPanel,111-11
+WC16014,111,12,DiversityPanel,111-12
+WC16017,111,13,DiversityPanel,111-13
+WC16018,111,14,DiversityPanel,111-14
+WC16023,111,15,DiversityPanel,111-15
+WC16027,111,16,DiversityPanel,111-16
+WC16029,111,17,DiversityPanel,111-17
+WC16034,111,18,DiversityPanel,111-18
+WC16036,111,19,DiversityPanel,111-19
+Stevens03,112,10,DiversityPanel,112-10
+WC16037,112,1,DiversityPanel,112-1
+WC16040,112,2,DiversityPanel,112-2
+WC16041,112,3,DiversityPanel,112-3
+WC16042,112,4,DiversityPanel,112-4
+WC16043,112,5,DiversityPanel,112-5
+WC16049,112,6,DiversityPanel,112-6
+WC16051,112,7,DiversityPanel,112-7
+WC16054,112,8,DiversityPanel,112-8
+WC16056,112,9,DiversityPanel,112-9
+WC16058,112,11,DiversityPanel,112-11
+WC16059,112,12,DiversityPanel,112-12
+WC16060,112,13,DiversityPanel,112-13
+WC16061,112,14,DiversityPanel,112-14
+WC16062,112,15,DiversityPanel,112-15
+WC16063,112,16,DiversityPanel,112-16
+WC16066,112,17,DiversityPanel,112-17
+WC16067,112,18,DiversityPanel,112-18
+WC16068,112,19,DiversityPanel,112-19
+A41SX3,113,10,DiversityPanel,113-10
+A41SX8,113,11,DiversityPanel,113-11
+BL03,113,13,DiversityPanel,113-13
+BL04,113,15,DiversityPanel,113-15
+BL05,113,16,DiversityPanel,113-16
+BL09,113,17,DiversityPanel,113-17
+BL10,113,18,DiversityPanel,113-18
+BL14,113,19,DiversityPanel,113-19
+D8S,113,12,DiversityPanel,113-12
+Stevens11,113,5,DiversityPanel,113-5
+Stevens13,113,14,DiversityPanel,113-14
+WC16070,113,1,DiversityPanel,113-1
+WC16071,113,2,DiversityPanel,113-2
+WC16072,113,3,DiversityPanel,113-3
+WC16073,113,4,DiversityPanel,113-4
+WC17001,113,6,DiversityPanel,113-6
+WC17002,113,7,DiversityPanel,113-7
+WC17003,113,8,DiversityPanel,113-8
+WC17004,113,9,DiversityPanel,113-9
+BL18,114,1,DiversityPanel,114-1
+BL19,114,2,DiversityPanel,114-2
+BLM01,114,3,DiversityPanel,114-3
+Chip01,114,4,DiversityPanel,114-4
+Chip03,114,5,DiversityPanel,114-5
+Chip05,114,6,DiversityPanel,114-6
+Chip07,114,7,DiversityPanel,114-7
+Chip08,114,8,DiversityPanel,114-8
+Chip10,114,9,DiversityPanel,114-9
+Chip17,114,10,DiversityPanel,114-10
+FRLK12,114,11,DiversityPanel,114-11
+GYPL17,114,12,DiversityPanel,114-12
+GYPL18,114,13,DiversityPanel,114-13
+GYPL19,114,14,DiversityPanel,114-14
+GYPL28,114,15,DiversityPanel,114-15
+GYPL31,114,16,DiversityPanel,114-16
+GYPL32,114,17,DiversityPanel,114-17
+HAWL05,114,18,DiversityPanel,114-18
+HW05,114,19,DiversityPanel,114-19
+HW12,115,1,DiversityPanel,115-1
+KLB17,115,2,DiversityPanel,115-2
+LL07,115,3,DiversityPanel,115-3
+LL08,115,5,DiversityPanel,115-5
+LL12,115,6,DiversityPanel,115-6
+LL13,115,7,DiversityPanel,115-7
+LL14,115,8,DiversityPanel,115-8
+LL15,115,9,DiversityPanel,115-9
+LOLM01,115,11,DiversityPanel,115-11
+LOLM03,115,12,DiversityPanel,115-12
+LOLM07,115,13,DiversityPanel,115-13
+LOLM11,115,14,DiversityPanel,115-14
+LOLM12,115,15,DiversityPanel,115-15
+LRL01,115,16,DiversityPanel,115-16
+LRL02,115,17,DiversityPanel,115-17
+LRL03,115,18,DiversityPanel,115-18
+LRL04,115,19,DiversityPanel,115-19
+Stevens02,115,10,DiversityPanel,115-10
+Stevens12,115,4,DiversityPanel,115-4
+LorrainWU,116,15,DiversityPanel,116-15
+LRL05,116,1,DiversityPanel,116-1
+LRL10,116,2,DiversityPanel,116-2
+LRL11,116,3,DiversityPanel,116-3
+LRL15,116,4,DiversityPanel,116-4
+LRL18,116,5,DiversityPanel,116-5
+PMW02,116,6,DiversityPanel,116-6
+PMW16,116,7,DiversityPanel,116-7
+PMW20,116,8,DiversityPanel,116-8
+SEB15,116,9,DiversityPanel,116-9
+SHPL13,116,10,DiversityPanel,116-10
+Stevens10,116,17,DiversityPanel,116-17
+Stevens14,116,12,DiversityPanel,116-12
+WABL04,116,11,DiversityPanel,116-11
+WABL06,116,13,DiversityPanel,116-13
+WABL11,116,14,DiversityPanel,116-14
+WC170071,116,16,DiversityPanel,116-16
+WC170077,116,18,DiversityPanel,116-18
+WC170081,116,19,DiversityPanel,116-19
+WC170131,117,1,DiversityPanel,117-1
+WC170135,117,2,DiversityPanel,117-2
+WC170141,117,3,DiversityPanel,117-3
+WC170203,117,4,DiversityPanel,117-4
+WC17022,117,5,DiversityPanel,117-5
+WC170238,117,6,DiversityPanel,117-6
+WC170241,117,7,DiversityPanel,117-7
+WC170251,117,8,DiversityPanel,117-8
+WC170252,117,9,DiversityPanel,117-9
+WC170263,117,10,DiversityPanel,117-10
+WC170266,117,11,DiversityPanel,117-11
+WC170271,117,12,DiversityPanel,117-12
+WC170272,117,13,DiversityPanel,117-13
+WC170273,117,14,DiversityPanel,117-14
+WC170274,117,15,DiversityPanel,117-15
+WC170275,117,16,DiversityPanel,117-16
+WC170276,117,17,DiversityPanel,117-17
+WC170277,117,18,DiversityPanel,117-18
+WC170361,117,19,DiversityPanel,117-19
+Stevens01,118,6,DiversityPanel,118-6
+WC170367,118,1,DiversityPanel,118-1
+WC170371,118,2,DiversityPanel,118-2
+WC170381,118,3,DiversityPanel,118-3
+WC170382,118,4,DiversityPanel,118-4
+WC170391,118,5,DiversityPanel,118-5
+WC170411,118,7,DiversityPanel,118-7
+WC170421,118,8,DiversityPanel,118-8
+WC170431,118,9,DiversityPanel,118-9
+WC170438,118,10,DiversityPanel,118-10
+WC170461,118,11,DiversityPanel,118-11
+WC170465,118,12,DiversityPanel,118-12
+WC170471,118,13,DiversityPanel,118-13
+WC170473,118,14,DiversityPanel,118-14
+WC170477,118,15,DiversityPanel,118-15
+WC170503,118,16,DiversityPanel,118-16
+WC170521,118,17,DiversityPanel,118-17
+WC170523,118,18,DiversityPanel,118-18
+WC170533,118,19,DiversityPanel,118-19
+Stevens16,119,12,DiversityPanel,119-12
+WC170534,119,1,DiversityPanel,119-1
+WC170572,119,2,DiversityPanel,119-2
+WC170621,119,3,DiversityPanel,119-3
+WC17063,119,4,DiversityPanel,119-4
+WC17064,119,5,DiversityPanel,119-5
+WC170651,119,6,DiversityPanel,119-6
+WC170652,119,7,DiversityPanel,119-7
+WC170653,119,8,DiversityPanel,119-8
+WC170701,119,9,DiversityPanel,119-9
+WC170707,119,10,DiversityPanel,119-10
+WC170721,119,11,DiversityPanel,119-11
+WC170743,119,13,DiversityPanel,119-13
+WC170745,119,14,DiversityPanel,119-14
+WC170794,119,15,DiversityPanel,119-15
+WC170811,119,16,DiversityPanel,119-16
+WC170861,119,17,DiversityPanel,119-17
+WC170906,119,18,DiversityPanel,119-18
+WC170992,119,19,DiversityPanel,119-19
+Sweetie39,NA,NA,SweetiePanel,NA-NA
+Sweetie40,NA,NA,SweetiePanel,NA-NA
