@@ -31,6 +31,12 @@ source('tacy_conc.R')
 conc_data <- tacy_conc(data) %>% 
   left_join( metadata, by = 'Sample_code') 
 
+# Get the mean concentration value
+
+
+
+
+
 
 
 weight_data <- read.csv('Weight_H1_2023.csv', header = TRUE)
@@ -39,7 +45,17 @@ weight_data$Sample_name <- gsub('[\\. ()]', '', weight_data$Sample_name)
 weight_data$Sample_name <- gsub('(STEVENS)([1-9]$)', '\\10\\2', weight_data$Sample_name)
 
 
-weight_data[!(weight_data$Sample_name %in% metadata$Sample_name),]
+h1_2023 <- weight_data[(weight_data$Sample_name %in% metadata$Sample_name),] %>% 
+  dplyr::select(Sample_name, Fruit_n, Total_weight, Avg_weight)
+
+tacy_2023 <- conc_data %>% filter(Harvest == 1 )
+
+tacy <- left_join(tacy_2023, 
+          h1_2023, by = 'Sample_name', 
+          relationship = 'many-to-many') %>% 
+  mutate(Sample_Rep = paste(Sample_name, Rep, sep = '_')) %>% 
+  filter(Population == 'DiversityPanel') %>% View
+
 
 # write.csv(weight_data, 'Weight_H1_2023.csv', quote = F, row.names = F)
 # 
