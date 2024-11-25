@@ -1,5 +1,6 @@
 library(EBImage)
 library(reticulate)
+library(tidyverse)
 
 setwd('~/Documents/GitHub/CranberryLab/External_structure/')
 
@@ -88,6 +89,7 @@ labeled <- bwlabel(binary)
 features_bar_mom <- computeFeatures.moment(labeled)
 features_bar_shape <- computeFeatures.shape(labeled)
 
+
 # Combinar ambas tablas
 features_with_labels_bar <- data.frame(
   Label = as.numeric(rownames(features_bar_shape)),  # Etiquetas de los frutos
@@ -134,37 +136,13 @@ if (is.null(img)) {
   stop("La imagen no se pudo cargar. Verifica la ruta del archivo.")
 }
 
-# Crear un umbral binario
-lowcolor <- tuple(0, 0, 75)
-highcolor <- tuple(255, 255, 255)
-thresh <- cv2$inRange(img, lowcolor, highcolor)
 
-# Convertir 'thresh' al formato uint8
-thresh <- np$uint8(thresh)
+library(reticulate)
 
-# Crear un kernel
-kernel <- np$ones(tuple(as.integer(5), as.integer(5)), dtype = np$uint8)
+# Convertir la matriz de R a un array de NumPy
+np <- import("numpy")
+img_np <- np$array(img, dtype = "uint8")  # Convertir a tipo uint8
 
-# Aplicar la operación MORPH_CLOSE
-thresh <- cv2$morphologyEx(thresh, cv2$MORPH_CLOSE, kernel)
-
-# Detectar contornos
-contours <- cv2$findContours(thresh, cv2$RETR_EXTERNAL, cv2$CHAIN_APPROX_SIMPLE)
-contours <- if (length(contours) == 2) contours[[1]] else contours[[2]]
-
-# Crear una copia de la imagen original
-result <- np$copy(img)
-
-# Dibujar contornos basados en el área
-for (c in contours) {
-  area <- cv2$contourArea(c)
-  if (area > 5000) {
-    cv2$drawContours(result, list(c), -1, tuple(0, 255, 0), 2)
-  }
-}
-
-# Guardar las imágenes procesadas
-cv2$imwrite('red_line_thresh.png', thresh)
-cv2$imwrite('red_line_extracted.png', result)
-
-cat("Imágenes guardadas: red_line_thresh.png y red_line_extracted.png\n")
+# Convertir a escala de grises
+cv2 <- import("cv2")
+gray <- cv2$cvtColor(img_np, cv2$COLOR_BGR2GRAY)
