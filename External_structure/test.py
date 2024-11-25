@@ -3,17 +3,22 @@ import cv2
 import numpy as np
 import argparse
 import os
-import matplotlib.pyplot as plt
+
+
+# Variable global para un contador único de frutas
+fruit_counter = 1
 
 
 def process_image(image_path, output_dir):
     """
-    Procesa una sola imagen para detectar frutos y calcular estadísticas de color.
+    Procesa una sola imagen para detectar frutos, calcular estadísticas y guardar la imagen anotada.
 
     Args:
         image_path (str): Ruta de la imagen a procesar.
         output_dir (str): Directorio donde se guardarán las imágenes anotadas y resultados.
     """
+    global fruit_counter  # Usamos una variable global para que el conteo sea único en todas las imágenes
+
     # Crear una lista para guardar los resultados
     results = []
 
@@ -43,7 +48,7 @@ def process_image(image_path, output_dir):
         image_contours = image.copy()
 
         # Filtrar contornos redondos/ovalados y dibujarlos con etiquetas
-        for idx, contour in enumerate(contours):
+        for contour in contours:
             # Calcular el área y el perímetro del contorno
             area = cv2.contourArea(contour)
             perimeter = cv2.arcLength(contour, True)
@@ -51,23 +56,57 @@ def process_image(image_path, output_dir):
                 circularity = (4 * np.pi * area) / (perimeter ** 2)
                 # Umbral para considerar el contorno como redondo/ovalado y filtrar por área
                 if 2000 < area < 200000 and 0.5 < circularity <= 1.2:
-                    # Dibujar el contorno
-                    cv2.drawContours(image_contours, [contour], -1, (0, 0, 255), 2)
-
                     # Calcular el centroide del contorno
                     M = cv2.moments(contour)
                     if M["m00"] > 0:
                         cX = int(M["m10"] / M["m00"])
                         cY = int(M["m01"] / M["m00"])
 
-                        # Poner el identificador (e.g., "fruit_1") en la imagen
-                        label = f"fruit_{idx + 1}"
+                        # Crear una etiqueta única para cada fruta
+                        label = f"Fruit_{fruit_counter}"
+                        fruit_counter += 1
+
+                        # Dibujar el contorno
+                        cv2.drawContours(image_contours, [contour], -1, (0, 255, 0), 2)  # Contorno en verde
+
+                        # Agregar fondo negro translúcido detrás del texto
+                        overlay = image_contours.copy()
+                        text_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 0.8, 2)[0]
+                        # Obtener las dimensiones del texto
+                        text_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 2, 3)[0]  # Cambia 2 y 3 según el tamaño del texto
+                        text_width, text_height = text_size
+
+                        # Calcular el rectángulo de fondo basado en el tamaño del texto
+                        margin_x = 15  # Margen horizontal
+                        margin_y = 15  # Margen vertical
+                        cv2.rectangle(
+                            overlay,
+                            (cX - margin_x, cY - text_height - margin_y),  # Coordenadas del inicio del rectángulo
+                            (cX + text_width + margin_x, cY + margin_y),   # Coordenadas del final del rectángulo
+                            (0, 0, 0),  # Color negro
+                            -1  # Rellenar el rectángulo
+                        )
+
+                        alpha = 0.3  # Opacidad del fondo negro
+                        cv2.addWeighted(overlay, alpha, image_contours, 1 - alpha, 0, image_contours)
+
+                        # Agregar el texto en rosa pastel
+                        cv2.putText(
+                            image_contours,
+                            label,
+                            (cX - 10, cY - 10),
+                            cv2.FONT_HERSHEY_SIMPLEX,
+                            2,
+                            (203, 192, 255),  # Color rosa pastel en formato BGR
+                            2
+                        )
 
                         # Crear una máscara para el contorno actual
                         mask = np.zeros(image.shape[:2], dtype=np.uint8)
                         cv2.drawContours(mask, [contour], -1, 255, -1)
 
-                        # Calcular estadísticas de color
+                        # Calcular estadísticas de color para todos los espacios
+                        row = {"Image_name": os.path.basename(image_path), "Fruit_label": label}
                         for space_name, color_space in [("RGB", image), ("HSV", hsv_image), ("Lab", lab_image), ("Grayscale", gray_image)]:
                             if space_name == "Grayscale":
                                 channels = [color_space]
@@ -82,50 +121,22 @@ def process_image(image_path, output_dir):
                                 std = np.std(values)
                                 cv = (std / mean) * 100 if mean != 0 else 0
 
-                                # Agregar los resultados al CSV
-                                results.append({
-                                    "Image_name": os.path.basename(image_path),
-                                    "Fruit_number": idx + 1,
-                                    f"{channel_name}_mean": mean,
-                                    f"{channel_name}_Std": std,
-                                    f"{channel_name}_CV": cv
-                                })
+                                # Agregar estadísticas al renglón
+                                row[f"{channel_name}_mean"] = mean
+                                row[f"{channel_name}_std"] = std
+                                row[f"{channel_name}_cv"] = cv
 
-                        # Dibujar el texto en rosa pastel sobre un rectángulo negro translúcido
-                        overlay = image_contours.copy()
-                        text_size = cv2.getTextSize(label, cv2.FONT_HERSHEY_SIMPLEX, 2, 3)[0]
-                        text_width, text_height = text_size
-                        cv2.rectangle(
-                            overlay,
-                            (cX - 15, cY - text_height - 20),
-                            (cX + text_width + 15, cY + 10),
-                            (0, 0, 0),
-                            -1
-                        )
-                        alpha = 0.3
-                        cv2.addWeighted(overlay, alpha, image_contours, 1 - alpha, 0, image_contours)
-                        cv2.putText(
-                            image_contours,
-                            label,
-                            (cX - 10, cY - 10),
-                            cv2.FONT_HERSHEY_SIMPLEX,
-                            2,
-                            (203, 192, 255),
-                            3
-                        )
+                        results.append(row)
 
         # Guardar la imagen anotada
-        output_image_path = os.path.join(output_dir, os.path.basename(image_path))
+        output_image_path = os.path.join(output_dir, f"annotated_{os.path.basename(image_path)}")
         cv2.imwrite(output_image_path, image_contours)
+        print(f"Imagen anotada guardada en: {output_image_path}")
 
-        # Guardar los resultados en un CSV
-        output_csv_path = os.path.join(output_dir, "output_colors.csv")
-        df = pd.DataFrame(results)
-        df.to_csv(output_csv_path, index=False)
-
-        print(f"Procesado {image_path}. Resultados guardados en {output_csv_path}")
+        return results
     else:
         print(f"Error: No se pudo cargar la imagen {image_path}. Verifica la ruta.")
+        return []
 
 
 def main():
@@ -140,16 +151,28 @@ def main():
     # Crear directorio de salida si no existe
     os.makedirs(output_dir, exist_ok=True)
 
+    all_results = []
+
     if os.path.isfile(input_path):
         # Procesar una sola imagen
-        process_image(input_path, output_dir)
+        results = process_image(input_path, output_dir)
+        all_results.extend(results)
     elif os.path.isdir(input_path):
         # Procesar todas las imágenes en un directorio
         for file_name in os.listdir(input_path):
             if file_name.lower().endswith(('.png', '.jpg', '.jpeg')):
-                process_image(os.path.join(input_path, file_name), output_dir)
+                results = process_image(os.path.join(input_path, file_name), output_dir)
+                all_results.extend(results)
     else:
         print("Error: La ruta de entrada no es válida. Proporcione un archivo o un directorio válido.")
+        return
+
+    # Guardar todos los resultados en un solo archivo CSV
+    output_csv_path = os.path.join(output_dir, "output_colors.csv")
+    df = pd.DataFrame(all_results)
+    df.to_csv(output_csv_path, index=False)
+
+    print(f"Resultados guardados en {output_csv_path}")
 
 
 if __name__ == "__main__":
